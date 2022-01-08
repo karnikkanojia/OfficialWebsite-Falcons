@@ -1,3 +1,5 @@
+@import url(./keyframes.css);
+
 *,
 *::after,
 *::before {
@@ -12,8 +14,10 @@ a:active {
 
 html {
   height: 100vh;
-  font-size: 100%;
+  font-size: max(16px, 100%);
   box-sizing: border-box;
+  background-color: #fbf7f2;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -120,7 +124,7 @@ body {
   justify-content: center;
   position: absolute;
   width: 35vw;
-  height: 106vh;
+  height: 102.7vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -136,16 +140,14 @@ body {
 }
 
 #menu li {
+  text-transform: uppercase;
   position: relative;
   font-weight: 500;
   padding: 20px 0;
   font-size: 22px;
 }
 
-/* #menu li {
-  position: relative;
-} */
-
+/* Menu Toggle and menu section */
 #menu li:hover:before {
   display: block;
   width: 10%;
@@ -171,7 +173,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  padding: min(2.5%, 1.2rem);
+  padding: max(3%, 1.2rem);
   grid-template-columns: auto 100%;
   display: flex;
   justify-content: center;
@@ -184,11 +186,14 @@ body {
 }
 
 .vulcancontainer {
+  padding-left: 2%;
   height: 100%;
   width: 100%;
-  background: url("/assets/yellowbgvulcan.png");
+  background: url(/assets/yellowbgvulcan.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: left;
 }
 
 .text-landing {
@@ -200,6 +205,10 @@ body {
   padding: 0 20px;
 }
 
+.text-landing > p {
+  white-space: pre-line;
+}
+
 .text-landing > .title {
   font-size: 3.4rem;
   font-weight: 600;
@@ -208,13 +217,13 @@ body {
 }
 
 .text-landing > p {
-  font-family: 'Biryani', 'sans-serif';
+  font-family: "Biryani", "sans-serif";
   color: white;
   white-space: pre-line;
 }
 
 .buttons > .btn {
-  font-family: 'Biryani', 'sans-serif';
+  font-family: "Biryani", "sans-serif";
   font-weight: 600;
   padding: 0.625rem;
   padding-top: min(0.875rem, 34px);
@@ -224,4 +233,162 @@ body {
 
 .explore-btn {
   margin-right: 12px;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+.ico {
+  margin: 0 auto;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: url("#goo");
+}
+.ico .circle {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform-origin: 0%;
+}
+.ico .circle.circle-top {
+  height: 16.6666666667px;
+  width: 20.8333333333px;
+  -webkit-animation: blob-1-anim 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: blob-1-anim 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  z-index: 0;
+  top: 0;
+}
+.ico .st-arrow {
+  fill: #55544f;
+  -webkit-animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards
+    infinite;
+  animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  perspective: 9000px;
+  transform: translateZ(0);
+  transform-origin: bottom;
+}
+
+.ico:hover {
+  cursor: pointer;
+}
+
+.svg {
+  z-index: 9;
+  position: relative;
+}
+
+.team-intro {
+  position: relative;
+}
+
+#vulcan-text-large {
+  font-size: 4.625rem;
+  font-weight: 700;
+  position: absolute;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  top: 38%;
+  right: -5%;
+  letter-spacing: 0.5625rem;
+}
+
+#airavat-text-large {
+  position: absolute;
+  font-weight: 700;
+  font-size: 4.625rem;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  top: 63%;
+  left: -5%;
+  letter-spacing: 0.5625rem;
+}
+
+#about-us-content, #our-mission-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 4% 18%;
+}
+
+#about-us-content > .title, #our-mission-content > .title {
+  font-weight: 700;
+  position: absolute;
+  top: 21%;
+  z-index: 1;
+}
+
+#our-mission-content > .title {
+  white-space: pre-line;
+  text-align: right;
+  top: 18%;
+  left: 40%;
+}
+
+.overlay {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.3;
+}
+
+#vulcantail {
+  background: url(/assets/vulcantail.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+  width: 46%;
+}
+
+.about-us-para, .our-mission-para {
+  width: 48%;;
+  padding: 0px 4.5rem;
+  white-space: pre-line;
+  font: 'Mada', 'sans-serif';
+  font-size: clamp(12px, 1rem, 20px);
+  font-weight: 300;
+}
+
+.our-mission-para {
+  text-align: right;
+}
+
+#vulcantailupper {
+  background: url(/assets/vulcantailupper.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+  width: 46%;
 }

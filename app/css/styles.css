@@ -1,181 +1,227 @@
-*, *::after, *::before {
-    box-sizing: inherit;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-a, a:visited, a:active {
-    text-decoration: none;
+a,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 
 html {
-    height: 100vh;
-    font-size: 100%;
-    box-sizing: border-box;
+  height: 100vh;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1rem;
 }
 
 .super-center {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .wrapper {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
-#menuToggle
-{
+.landing {
+  position: relative;
+}
+
+#menuToggle {
   display: block;
   position: relative;
   top: 0;
   left: 0;
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: #232323;
-  
+
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: -7px;
   left: -5px;
-  
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
+
   -webkit-touch-callout: none;
 }
 
-.navbar {
-	align-self: flex-start;
-}
-
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: #000000;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
-  width: 300px;
+  width: 35vw;
+  height: 106vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li
-{
-  padding: 10px 0;
+#menu li {
+  position: relative;
+  font-weight: 500;
+  padding: 20px 0;
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul
-{
+/* #menu li {
+  position: relative;
+} */
+
+#menu li:hover:before {
+  display: block;
+  width: 10%;
+}
+
+#menu li::before {
+  content: "";
+  display: block;
+  bottom: 20px;
+  position: absolute;
+  height: 0.125rem;
+  width: 0;
+  background-color: black;
+  transition: width 200ms ease-in-out;
+}
+
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
-
-.logo {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding: min(2.5%, 1.2rem);
-	grid-template-columns: auto 100%;
-	display: flex;
-	justify-content: center;
+.nav-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: min(2.5%, 1.2rem);
+  grid-template-columns: auto 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #falcon-logo {
-	height: 3rem;
-	width: auto;
-	margin: 0 auto;
+  height: 3rem;
+  width: auto;
+  margin: 0 auto;
 }
 
 .vulcancontainer {
-	height: 100%;
-	width: 100%;
-	background: url('/assets/whitebgvulcan.png');
-	background-size: cover;
+  height: 100%;
+  width: 100%;
+  background: url("/assets/yellowbgvulcan.png");
+  background-size: cover;
+  background-position: left;
+}
+
+.text-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  padding: 0 20px;
+}
+
+.text-landing > .title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0.8125rem 0;
+}
+
+.text-landing > p {
+  font-family: 'Biryani', 'sans-serif';
+  color: white;
+  white-space: pre-line;
+}
+
+.buttons > .btn {
+  font-family: 'Biryani', 'sans-serif';
+  font-weight: 600;
+  padding: 0.625rem;
+  padding-top: min(0.875rem, 34px);
+  font-size: 0.875rem;
+  width: max(10rem, 23%);
+}
+
+.explore-btn {
+  margin-right: 12px;
 }

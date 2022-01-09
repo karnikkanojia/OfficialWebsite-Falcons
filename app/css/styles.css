@@ -1,4 +1,5 @@
 @import url(./keyframes.css);
+@import url(./form.css);
 
 *,
 *::after,
@@ -391,4 +392,64 @@ body {
   background-size: cover;
   height: 85%;
   width: 46%;
+}
+
+.seperator {
+  background-color: #dab783;
+  width: 100%;
+  height: 10vh;
+}
+
+.contact {
+  background-color: #fbf7f2;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0 10%;
+}
+
+.form-wrapper > h2 {
+  font-family: 'Biryani', 'sans-serif';
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+.maps-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-sec-wrapper {
+  display: flex;
+}
+
+#address {
+  margin-right: 10px;
+}
+
+#postcode {
+  margin-left: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }

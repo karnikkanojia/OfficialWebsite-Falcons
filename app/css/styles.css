@@ -1,6 +1,3 @@
-@import url(./keyframes.css);
-@import url(./form.css);
-
 *,
 *::after,
 *::before {
@@ -419,7 +416,7 @@ body {
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  padding: 0 10%;
+  padding: 0 7%;
 }
 
 .form-wrapper > h2 {
@@ -435,6 +432,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 2rem 0 0;
+
 }
 
 .address-sec-wrapper {
@@ -452,4 +451,67 @@ body {
 #map {
   height: 400px;
   width: 100%;
+}
+
+#footer {
+  font-family: 'Mada', 'sans-serif';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+}
+
+.fa-eye {
+  size: 5px;
+  margin-right: 12px;
+}
+
+.bg-front-vulcan {
+  background: url(/assets/achievements.png) fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+}
+
+.achievements-container {
+  position: relative;
+  height: 20%;
+}
+
+.achieved-wrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12%;
+  top: -40%;
+}
+
+.achieved-wrapper > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 12.5%;
+  text-align: center;
+}
+
+.achieved-wrapper > .card-title {
+  font-family: 'Mada', 'sans-serif';
+  font-weight: 700;
+}
+
+.achieved-wrapper > .card-value {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 300;
+}
+
+.achieved-wrapper > * > * {
+  padding: 12px 0;
 }

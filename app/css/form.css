@@ -1,11 +1,13 @@
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
+  -moz-appearance: none;
 }
 
 .custom-field {
@@ -88,6 +90,10 @@ input[type=number] {
   background-size: 100% 0.15em, 100% 0.1em, 100%;
 }
 
-.contact-submit-btn {
+#contact-submit-btn {
   margin-top: 1.75rem;
+  padding: 9px 32px;
 }
+
+/* button.btn:nth-child(7) {
+} */

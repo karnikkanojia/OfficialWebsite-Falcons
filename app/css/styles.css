@@ -1,0 +1,614 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+html {
+  height: 100vh;
+  font-size: max(16px, 100%);
+  box-sizing: border-box;
+  background-color: #fbf7f2;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1rem;
+}
+
+.super-center {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing {
+  position: relative;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #000000;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 35vw;
+  height: 102.7vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 500;
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+/* Menu Toggle and menu section */
+#menu li:hover:before {
+  display: block;
+  width: 10%;
+}
+
+#menu li::before {
+  content: "";
+  display: block;
+  bottom: 20px;
+  position: absolute;
+  height: 0.125rem;
+  width: 0;
+  background-color: black;
+  transition: width 200ms ease-in-out;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+.nav-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: max(3%, 1.2rem);
+  grid-template-columns: auto 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#falcon-logo {
+  height: 3rem;
+  width: auto;
+  margin: 0 auto;
+}
+
+.vulcancontainer {
+  padding-left: 2%;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/yellowbgvulcan.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.text-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  padding: 0 20px;
+}
+
+.text-landing > p {
+  white-space: pre-line;
+}
+
+.text-landing > .title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0.8125rem 0;
+}
+
+.text-landing > p {
+  font-family: "Biryani", "sans-serif";
+  color: white;
+  white-space: pre-line;
+}
+
+.buttons > .btn {
+  font-family: "Biryani", "sans-serif";
+  font-weight: 600;
+  padding: 0.625rem;
+  padding-top: min(0.875rem, 34px);
+  font-size: 0.875rem;
+  width: max(10rem, 23%);
+}
+
+.explore-btn {
+  margin-right: 12px;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+.ico {
+  margin: 0 auto;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: url("#goo");
+}
+.ico .circle {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform-origin: 0%;
+}
+.ico .circle.circle-top {
+  height: 16.6666666667px;
+  width: 20.8333333333px;
+  -webkit-animation: blob-1-anim 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: blob-1-anim 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  z-index: 0;
+  top: 0;
+}
+.ico .st-arrow {
+  fill: #55544f;
+  -webkit-animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards
+    infinite;
+  animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  perspective: 9000px;
+  transform: translateZ(0);
+  transform-origin: bottom;
+}
+
+.ico:hover {
+  cursor: pointer;
+}
+
+.svg {
+  z-index: 9;
+  position: relative;
+}
+
+.team-intro {
+  position: relative;
+}
+
+#vulcan-text-large {
+  font-size: 4.625rem;
+  font-weight: 700;
+  position: absolute;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  top: 38%;
+  right: -5%;
+  letter-spacing: 0.5625rem;
+}
+
+#airavat-text-large {
+  position: absolute;
+  font-weight: 700;
+  font-size: 4.625rem;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  top: 63%;
+  left: -5%;
+  letter-spacing: 0.5625rem;
+}
+
+#about-us-content, #our-mission-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 4% 18%;
+}
+
+#about-us-content > .title, #our-mission-content > .title {
+  font-weight: 700;
+  position: absolute;
+  top: 21%;
+  z-index: 1;
+}
+
+#our-mission-content > .title {
+  white-space: pre-line;
+  text-align: right;
+  top: 18%;
+  left: 40%;
+}
+
+#vulcantail {
+  background: url(/assets/vulcantail.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+  width: 46%;
+}
+
+.about-us-para, .our-mission-para {
+  width: 48%;;
+  padding: 0px 4.5rem;
+  white-space: pre-line;
+  font: 'Mada', 'sans-serif';
+  font-size: clamp(12px, 1rem, 20px);
+  font-weight: 300;
+}
+
+#our-mission-heading {
+  width: 14%;
+}
+
+.our-mission-para {
+  text-align: right;
+}
+
+#our-mission-heading {
+  width: 13%;
+ }
+ 
+
+#vulcantailupper {
+  background: url(/assets/vulcantailupper.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+  width: 46%;
+}
+
+.seperator {
+  background-color: #dab783;
+  width: 100%;
+  height: 10vh;
+}
+
+.contact {
+  background-color: #fbf7f2;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 7%;
+}
+
+.form-wrapper > h2 {
+  font-family: 'Biryani', 'sans-serif';
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+.maps-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 0 0;
+
+}
+
+.address-sec-wrapper {
+  display: flex;
+}
+
+#address {
+  margin-right: 10px;
+}
+
+#postcode {
+  margin-left: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#footer {
+  font-family: 'Mada', 'sans-serif';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+}
+
+.fa-eye {
+  size: 5px;
+  margin-right: 12px;
+}
+
+.bg-front-vulcan {
+  background: url(/assets/achievements.png) center bottom 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 70%;
+}
+
+.sponsor-text {
+  font-size: 1.375rem;
+ }
+ 
+
+.sponsors-section {
+  padding: 5% 12%;
+}
+
+.sponsors-1,
+.sponsors-2,
+.sponsors-3,
+.sponsors-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsors-1 > img,
+.sponsors-2 > img,
+.sponsors-3 > img,
+.sponsors-4 > img {
+  height: auto;
+}
+
+.sponsors-1 {
+  width: 65%;
+}
+
+.sponsors-1 > img {
+  max-width: 28%;
+}
+
+.sponsors-2 {
+  width: 82%;
+}
+
+.sponsors-2 > img {
+  max-width: 14%;
+}
+
+.sponsors-3 {
+  width: 100%;
+}
+
+.sponsors-3 > img {
+  max-width: 14%;
+}
+
+.sponsors-4 {
+  width: 100%;
+}
+
+.sponsors-4 > img {
+  max-width: 14%;
+}
+
+.achievements {
+  position: relative;
+}
+
+.team-info {
+  display: grid;
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  grid-template-columns: repeat(4%, auto);
+  padding: 0 7.185rem;
+
+}
+ 
+
+.info-wrapper {
+  grid-template-columns: repeat(4, auto);
+}
+
+.info-wrapper > * {
+  background-color: #fbf7f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 73%;
+  width: 56%;
+  border-radius: 13px;
+  padding: 0 12%;
+
+}
+
+.info-wrapper h5 {
+  margin-top: 10%;
+  font-weight: 600;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+.info-wrapper .fa {
+  size: 1.375rem;
+}
+
+.info-wrapper span {
+  font-size: 1.375rem;
+}
+
+#founded-in,
+#planes-built,
+#world-rank,
+#asia-rank {
+  display: flex;
+}
+
+.founded-in {
+  display: flex;
+}
+
+.planes-built {
+  display: flex;
+}
+
+.world-rank {
+  display: flex;
+}
+
+.asia-rank {
+  display: flex;
+}
+
+.grow { 
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.3);
+}

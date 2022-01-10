@@ -1,84 +1,375 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <div class="sidebar">
-    <div class="logo-details">
-        <div class="logo_name">Assailing Falcons</div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
-    <ul class="nav-list">
-      <li>
-        <a href="#">
-        <i class='bx bx-home'></i>
-          <span class="links_name">Home</span>
-        </a>
-         <span class="tooltip">Home</span>
-      </li>
-      <li>
-       <a href="#">
-        <i class='bx bxs-plane'></i>
-         <span class="links_name">Flagships</span>
-       </a>
-       <span class="tooltip">Flagships</span>
-     </li>
-     <li>
-       <a href="#">
-        <i class='bx bx-camera'></i>
-         <span class="links_name">Gallery</span>
-       </a>
-       <span class="tooltip">Gallery</span>
-     </li>
-     <li>
-       <a href="#">
-        <i class='bx bxs-trophy'></i>
-         <span class="links_name">Achievements</span>
-       </a>
-       <span class="tooltip">Achievements</span>
-     </li>
-     <li>
-       <a href="#">
-        <i class='bx bxs-contact'></i>
-         <span class="links_name">Contact Us</span>
-       </a>
-       <span class="tooltip">Contact Us</span>
-     </li>
-    </ul>
-  </div>
-
-  <section class="home-section">
-      <div class="logo">
-            <img src="Falcons Logo.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/logoblacka.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app/css/styles.css" />
+    <link rel="stylesheet" href="app/css/form.css" />
+    <link rel="stylesheet" href="app/css/keyframes.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="app/css/normalize.css" />
+    <link rel="stylesheet" href="app/css/departments.css" />
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <title>Assailing Falcons</title>
+  </head>
+  <body>
+    <div class="landing">
+      <div class="nav-wrapper super-center">
+        <nav role="navigation" class="navbar">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Flagships</li></a>
+              <a href="#"><li>Gallery</li></a>
+              <a href="#"><li>Achievements</li></a>
+              <a href="#"><li>Contact Us</li></a>
+            </ul>
+          </div>
+        </nav>
+        <img src="/assets/falconslogofull.png" id="falcon-logo" />
       </div>
-  </section>
+      <div class="wrapper super-center">
+        <div class="vulcancontainer">
+          <div class="text-landing">
+            <h1 class="title">ASSAILING FALCONS</h1>
+            <p>Most experienced Aero design team of VIT University.
+              We design and fabricate advanced class RC aircraft.
+            </p>
+            <div class="buttons">
+              <button type="button" class="btn btn-outline-dark explore-btn">
+                Brochure
+              </button>
+              <!-- <button type="button" class="btn btn-light explore-btn">Explore</button> -->
+              <button type="button" class="btn btn-light brochure-btn">
+                <i class="fas fa-eye"></i>Explore
+              </button>
+            </div>
+          </div>
+          <div class="arrow-wrapper">
+            <div class="ico animated">
+              <div class="circle circle-top"></div>
+              <div class="circle circle-main"></div>
+              <div class="circle circle-bottom"></div>
+
+              <svg
+                class="svg"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 612 612"
+                style="enable-background: new 0 0 612 612"
+                xml:space="preserve"
+              >
+                <defs>
+                  <clipPath id="cut-off-arrow">
+                    <circle cx="306" cy="306" r="287" />
+                  </clipPath>
+
+                  <filter id="goo">
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="10"
+                      result="blur"
+                    />
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"
+                    />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                  </filter>
+                </defs>
+                <path
+                  class="st-arrow"
+                  d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                      l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                      c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                      c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-intro">
+      <h1 id="vulcan-text-large">VULCAN</h1>
+      <h1 id="airavat-text-large">AIRAVAT</h1>
+      <div class="about-us wrapper">
+        <div class="content-wrapper" id="about-us-content">
+          <h1 class="title" id="about-us-heading"><!--ABOUT US--></h1>
+          <div id="vulcantail" loading="lazy" data-aos="fade-left">
+          </div>
+          <div class="about-us-para" data-aos="fade-right">
+            Assailing Falcons is one of the most distinguished members of SAE
+            International. The team brings together engineers from a variety of
+            backgrounds that are involved in aircraft design and manufacturing,
+            providing them with professional expertise and hands-on knowledge.
+          </div>
+        </div>
+      </div>
+      <div class="our-mission wrapper">
+        <div class="content-wrapper" id="our-mission-content">
+          <h1 class="title" id="our-mission-heading"><!--OUR
+            MISSION--></h1>
+          <div class="our-mission-para" data-aos="fade-left">
+            As a team, we aim to grab the highest laurels for the country and
+            construct aerodynamically efficient aircrafts. We tend not only to
+            achieve our mission statement of the competition but also learn and
+            gather deep knowledge about avionics and aeronautics for further
+            field development.
+          </div>
+          <div id="vulcantailupper" loading="lazy" data-aos="fade-right">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seperator"></div>
+    <div class="wrapper achievements">
+      <div class="bg-front-vulcan"></div>
+      <div class="team-info">
+        <div class="super-center info-wrapper">
+          <div class="btn btn-dark" id="founded-in" data-aos="fade-right">
+            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+            <h5 class="card-title">Founded In</h5>
+            <span class="card-value"><span class="counter">2010</span></span>
+          </div>
+          <div class="btn btn-dark" id="planes-built" data-aos="fade-up">
+            <i class="fas fa-plane fa-2x"></i>
+            <h5 class="card-title">RC Planes Built</h5>
+            <span class="card-value"><span class="counter">10</span>+</span>
+          </div>
+          <div class="btn btn-dark" id="world-rank" data-aos="fade-up">
+            <i class="fas fa-trophy fa-2x"></i>
+            <h5 class="card-title">World Rank</h5>
+            <span class="card-value"><span class="counter">5</span>th</span>
+          </div>
+          <div class="btn btn-dark" id="asia-rank" data-aos="fade-left">
+            <i class="fas fa-star fa-2x"></i>
+            <h5 class="card-title">Asia/Pacific Rank</h5>
+            <span class="card-value"><span class="counter">1</span>st</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seperator"></div>
+    <div class="department-heading super-center">
+      <div class="btn btn-dark">Departments</div>
+    </div>
+    <div class="departments-container wrapper">
+      <div class="departments">
+        <div class="options">
+           <div class="option active" style="--optionBackground:url(/assets/structures.jpg);">
+              <div class="shadow"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fas fa-cog"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">Structures</div>
+                 </div>
+              </div>
+           </div>
+           <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+              <div class="shadow"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fas fa-ruler-combined"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">Design</div>
+                 </div>
+              </div>
+           </div>
+           <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+              <div class="shadow"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fas fa-robot"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">Avionics</div>
+                 </div>
+              </div>
+           </div>
+           <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+              <div class="shadow"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fas fa-fan"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">Propulsion</div>
+                 </div>
+              </div>
+           </div>
+           <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+              <div class="shadow"></div>
+              <div class="label">
+                 <div class="icon">
+                  <i class="fas fa-plane-departure"></i>
+                 </div>
+                 <div class="info">
+                    <div class="main">CFD</div>
+                 </div>
+              </div>
+           </div>
+           <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+               <div class="icon">
+                <i class="fas fa-user-friends"></i>
+               </div>
+               <div class="info">
+                  <div class="main">Management</div>
+               </div>
+            </div>
+         </div>
+        </div>
+        </div>
+    </div>
+    <div class="seperator"></div>
+    <div class="wrapper super-center sponsors-section">
+      <div class="sponsor-text">
+        with ❤️ to our sponors
+      </div>
+      <div class="sponsors-1">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/simscale.png" alt="simscale">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/tmotors.png" alt="tmotors">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/holybro.png" alt="holybro">
+      </div>
+      <div class="sponsors-2">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/nxp.png" alt="nxp">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/redbull.png" alt="redbull">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/apc.png" alt="apc">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/hacker.png" alt="hacker"> 
+      </div>
+      <div class="sponsors-3">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/xoar.png" alt="xoar"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/solidworks.png" alt="solidworks"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/matlab.png" alt="matlab"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/ansys.png" alt="ansys"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/mastercam.png" alt="mastercam"> 
+      </div>
+      <div class="sponsors-4">
+        <img class ="grow" loading="lazy" src="/assets/sponsors/bhor.png" alt="bhor"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/simscale.png" alt="simscale"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/sparkfun.png" alt="sparkfun"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/easycomposites.png" alt="easycomp"> 
+        <img class ="grow" loading="lazy" src="/assets/sponsors/altair.png" alt="altair"> 
+      </div>
+    </div>
+    <div class="seperator"></div>
+    <div class="contact wrapper">
+      <div class="contact-wrapper">
+        <div class="form-wrapper">
+          <h2>Contact Us</h2>
+          <form class="contact-form">
+            <label class="custom-field" id="company-name">
+              <input type="text" placeholder="&nbsp;" />
+              <span class="placeholder">Your Company Name</span>
+            </label>
+            <label class="custom-field" id="nature-of-business">
+              <input type="text" placeholder="&nbsp;" />
+              <span class="placeholder">Nature of Business</span>
+            </label>
+            <div class="address-sec-wrapper">
+              <label class="custom-field" id="address">
+                <input type="text" placeholder="&nbsp;" />
+                <span class="placeholder">Address</span>
+              </label>
+              <label class="custom-field" id="postcode">
+                <input type="number" min="0" placeholder="&nbsp;" />
+                <span class="placeholder">Postcode</span>
+              </label>
+            </div>
+            <label class="custom-field" id="contact-name">
+              <input type="text" placeholder="&nbsp;" />
+              <span class="placeholder">Name</span>
+            </label>
+            <label class="custom-field" id="contact-phone">
+              <input type="number" placeholder="&nbsp;" />
+              <span class="placeholder">Phone Number</span>
+            </label>
+            <label class="custom-field" id="contact-email">
+              <input type="email" placeholder="&nbsp;" />
+              <span class="placeholder">E-mail</span>
+            </label>
+            <button type="button" class="btn btn-dark" id="contact-submit-btn">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="maps-link">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423776!2d79.15722245022293!3d12.971742990810927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1641715073119!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="seperator" id="footer">
+      <div class="copyright-text">
+        © 2022 Assailing Falcons
+      </div>
+      <div class="designed-by-text">
+        designed & developed with 😎 by falcons
+      </div>
+    </div>
+
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  let sidebar = document.querySelector(".sidebar");
-  let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
-
-  closeBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("open");
-    menuBtnChange();//calling the function(optional)
-  });
-
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
-  });
-
-  // following are the code to change sidebar button(optional)
-  function menuBtnChange() {
-   if(sidebar.classList.contains("open")){
-     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-   }else {
-     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
-   }
-  }
+    AOS.init({
+      once: true,
+    });
   </script>
-</body>
+  <script src="app/js/app.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 500,
+    });
+  </script>
+  <script>
+    $(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+});
+  </script>
 </html>

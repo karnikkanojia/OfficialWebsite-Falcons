@@ -25,7 +25,7 @@ const callback = (entries) => {
 };
 
 const infoObserver = new IntersectionObserver(callback, {
-  threshold: 1,
+  threshold: 0.9,
 });
 
 infoObjects.forEach((infoObject) => {
@@ -49,7 +49,7 @@ const typing = (entries) => {
           i++;
         }
         if(i==text.length) return;
-        setTimeout(loop, 100);
+        setTimeout(loop, 70);
       }
       loop();
       typingObserver.unobserve(ele);
@@ -60,7 +60,6 @@ const typing = (entries) => {
 const typingObserver = new IntersectionObserver(typing, {
   threshold: 1,
 });
-
 
 infoTitles.forEach( infoTitle => {
   typingObserver.observe(infoTitle);

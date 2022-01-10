@@ -468,53 +468,19 @@ body {
 }
 
 .bg-front-vulcan {
-  background: url(/assets/achievements.png) fixed center center;
+  background: url(/assets/achievements.png) center bottom 20%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 60%;
+  height: 70%;
 }
 
-.achievements-container {
-  position: relative;
-  height: 20%;
-}
-
-.achieved-wrapper {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 12%;
-  top: -40%;
-}
-
-.achieved-wrapper > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 100%;
-  width: 12.5%;
-  text-align: center;
-}
-
-.achieved-wrapper > .card-title {
-  font-family: 'Mada', 'sans-serif';
-  font-weight: 700;
-}
-
-.achieved-wrapper > .card-value {
-  font-family: 'Montserrat', 'sans-serif';
-  font-weight: 300;
-}
-
-.achieved-wrapper > * > * {
-  padding: 12px 0;
-}
+.sponsor-text {
+  font-size: 1.375rem;
+ }
+ 
 
 .sponsors-section {
   padding: 5% 12%;
@@ -566,4 +532,72 @@ body {
 
 .sponsors-4 > img {
   max-width: 14%;
+}
+
+.achievements {
+  position: relative;
+}
+
+.team-info {
+  display: grid;
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  grid-template-columns: repeat(4%, auto);
+}
+
+.info-wrapper {
+  grid-template-columns: repeat(4, auto);
+}
+
+.info-wrapper > * {
+  background-color: #fbf7f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 73%;
+  width: 49%;
+  border-radius: 13px;
+  padding: 0 12%;
+
+}
+
+.info-wrapper h5 {
+  margin-top: 10%;
+  font-weight: 600;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+.info-wrapper .fa {
+  size: 1.375rem;
+}
+
+.info-wrapper span {
+  font-size: 1.375rem;
+}
+
+#founded-in,
+#planes-built,
+#world-rank,
+#asia-rank {
+  display: flex;
+}
+
+.founded-in {
+  display: flex;
+}
+
+.planes-built {
+  display: flex;
+}
+
+.world-rank {
+  display: flex;
+}
+
+.asia-rank {
+  display: flex;
 }

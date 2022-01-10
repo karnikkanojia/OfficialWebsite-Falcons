@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="app/css/keyframes.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="app/css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -121,11 +122,10 @@
       <h1 id="airavat-text-large">AIRAVAT</h1>
       <div class="about-us wrapper">
         <div class="content-wrapper" id="about-us-content">
-          <h1 class="title">ABOUT US</h1>
-          <div id="vulcantail" loading="lazy">
-            <span class="overlay" />
+          <h1 class="title" id="about-us-heading"><!--ABOUT US--></h1>
+          <div id="vulcantail" data-aos="fade-right" data-aos-duration="1000" loading="lazy">
           </div>
-          <div class="about-us-para">
+          <div class="about-us-para" data-aos="fade-left" data-aos-duration="1000">
             Assailing Falcons is one of the most distinguished members of SAE
             International. The team brings together engineers from a variety of
             backgrounds that are involved in aircraft design and manufacturing,
@@ -135,17 +135,15 @@
       </div>
       <div class="our-mission wrapper">
         <div class="content-wrapper" id="our-mission-content">
-          <h1 class="title">OUR
-            MISSION</h1>
-          <div class="our-mission-para">
+          <h1 class="title" id="our-mission-heading"><!--OUR MISSION--></h1>
+          <div class="our-mission-para" data-aos="fade-right" data-aos-duration="1000">
             As a team, we aim to grab the highest laurels for the country and
             construct aerodynamically efficient aircrafts. We tend not only to
             achieve our mission statement of the competition but also learn and
             gather deep knowledge about avionics and aeronautics for further
             field development.
           </div>
-          <div id="vulcantailupper" loading="lazy">
-            <span class="overlay" />
+          <div id="vulcantailupper" data-aos="fade-left" data-aos-duration="1000" loading="lazy">
           </div>
         </div>
       </div>
@@ -158,22 +156,22 @@
           <div class="btn btn-dark" id="founded-in">
             <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
             <h5 class="card-title">Founded In</h5>
-            <span class="card-value">2010</span>
+            <span class="card-value"><span class="counter">2010</span></span>
           </div>
           <div class="btn btn-dark" id="planes-built">
             <i class="fas fa-plane fa-2x"></i>
             <h5 class="card-title">RC Planes Built</h5>
-            <span class="card-value">10+</span>
+            <span class="card-value"><span class="counter">10</span>+</span>
           </div>
           <div class="btn btn-dark" id="world-rank">
             <i class="fas fa-trophy fa-2x"></i>
             <h5 class="card-title">World Rank</h5>
-            <span class="card-value">5th</span>
+            <span class="card-value"><span class="counter">5</span>th</span>
           </div>
           <div class="btn btn-dark" id="asia-rank">
             <i class="fas fa-star fa-2x"></i>
             <h5 class="card-title">Asia/Pacific Rank</h5>
-            <span class="card-value">1st</span>
+            <span class="card-value"><span class="counter">1</span>st</span>
           </div>
         </div>
       </div>
@@ -184,29 +182,29 @@
         with ❤️ to our sponors
       </div>
       <div class="sponsors-1">
-        <img loading="lazy" src="/assets/sponsors/simscale.png" alt="simscale">
-        <img loading="lazy" src="/assets/sponsors/tmotors.png" alt="tmotors">
+        <img src="/assets/sponsors/simscale.png" alt="simscale">
+        <img src="/assets/sponsors/tmotors.png" alt="tmotors">
         <img loading="lazy" src="/assets/sponsors/holybro.png" alt="holybro">
       </div>
       <div class="sponsors-2">
-        <img loading="lazy" src="/assets/sponsors/nxp.png" alt="nxp">
-        <img loading="lazy" src="/assets/sponsors/redbull.png" alt="redbull">
-        <img loading="lazy" src="/assets/sponsors/apc.png" alt="apc">
-        <img loading="lazy" src="/assets/sponsors/hacker.png" alt="hacker"> 
+        <img src="/assets/sponsors/nxp.png" alt="nxp">
+        <img src="/assets/sponsors/redbull.png" alt="redbull">
+        <img src="/assets/sponsors/apc.png" alt="apc">
+        <img src="/assets/sponsors/hacker.png" alt="hacker"> 
       </div>
       <div class="sponsors-3">
-        <img loading="lazy" src="/assets/sponsors/xoar.png" alt="xoar"> 
-        <img loading="lazy" src="/assets/sponsors/solidworks.png" alt="solidworks"> 
-        <img loading="lazy" src="/assets/sponsors/matlab.png" alt="matlab"> 
-        <img loading="lazy" src="/assets/sponsors/ansys.png" alt="ansys"> 
-        <img loading="lazy" src="/assets/sponsors/mastercam.png" alt="mastercam"> 
+        <img src="/assets/sponsors/xoar.png" alt="xoar"> 
+        <img src="/assets/sponsors/solidworks.png" alt="solidworks"> 
+        <img src="/assets/sponsors/matlab.png" alt="matlab"> 
+        <img src="/assets/sponsors/ansys.png" alt="ansys"> 
+        <img src="/assets/sponsors/mastercam.png" alt="mastercam"> 
       </div>
       <div class="sponsors-4">
-        <img loading="lazy" src="/assets/sponsors/bhor.png" alt="bhor"> 
-        <img loading="lazy" src="/assets/sponsors/simscale.png" alt="simscale"> 
-        <img loading="lazy" src="/assets/sponsors/sparkfun.png" alt="sparkfun"> 
-        <img loading="lazy" src="/assets/sponsors/easycomposites.png" alt="easycomp"> 
-        <img loading="lazy" src="/assets/sponsors/altair.png" alt="altair"> 
+        <img src="/assets/sponsors/bhor.png" alt="bhor"> 
+        <img src="/assets/sponsors/simscale.png" alt="simscale"> 
+        <img src="/assets/sponsors/sparkfun.png" alt="sparkfun"> 
+        <img src="/assets/sponsors/easycomposites.png" alt="easycomp"> 
+        <img src="/assets/sponsors/altair.png" alt="altair"> 
       </div>
     </div>
     <div class="seperator"></div>
@@ -272,5 +270,11 @@
     </div>
 
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
   <script src="app/js/app.js"></script>
 </html>

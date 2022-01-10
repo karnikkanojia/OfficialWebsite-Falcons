@@ -350,14 +350,6 @@ body {
   left: 40%;
 }
 
-.overlay {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  opacity: 0.3;
-}
-
 #vulcantail {
   background: url(/assets/vulcantail.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -380,6 +372,11 @@ body {
 .our-mission-para {
   text-align: right;
 }
+
+#our-mission-heading {
+  width: 13%;
+ }
+ 
 
 #vulcantailupper {
   background: url(/assets/vulcantailupper.png) no-repeat center center;
@@ -559,7 +556,7 @@ body {
   justify-content: space-evenly;
   height: 73%;
   width: 49%;
-  border-radius: 13px;
+  border-radius: 20px;
   padding: 0 12%;
 
 }
@@ -584,20 +581,5 @@ body {
 #world-rank,
 #asia-rank {
   display: flex;
-}
-
-.founded-in {
-  display: flex;
-}
-
-.planes-built {
-  display: flex;
-}
-
-.world-rank {
-  display: flex;
-}
-
-.asia-rank {
-  display: flex;
+  border-radius: 16px;
 }

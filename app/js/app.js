@@ -25,11 +25,7 @@ const callback = (entries) => {
 };
 
 const infoObserver = new IntersectionObserver(callback, {
-<<<<<<< HEAD
-  threshold: 1,
-=======
   threshold: 0.9,
->>>>>>> homepage-latest
 });
 
 infoObjects.forEach((infoObject) => {
@@ -53,11 +49,7 @@ const typing = (entries) => {
           i++;
         }
         if(i==text.length) return;
-<<<<<<< HEAD
-        setTimeout(loop, 100);
-=======
         setTimeout(loop, 70);
->>>>>>> homepage-latest
       }
       loop();
       typingObserver.unobserve(ele);
@@ -69,13 +61,6 @@ const typingObserver = new IntersectionObserver(typing, {
   threshold: 1,
 });
 
-<<<<<<< HEAD
-
 infoTitles.forEach( infoTitle => {
   typingObserver.observe(infoTitle);
 })
-=======
-infoTitles.forEach( infoTitle => {
-  typingObserver.observe(infoTitle);
-})
->>>>>>> homepage-latest

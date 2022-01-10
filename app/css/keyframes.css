@@ -94,8 +94,6 @@
   100% {
     transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
   }
-<<<<<<< HEAD
-=======
 }
 
 @-webkit-keyframes slide {
@@ -134,5 +132,4 @@
   100% {
     transform: rotate(360deg);
   }
->>>>>>> homepage-latest
 }

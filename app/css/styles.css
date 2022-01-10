@@ -561,13 +561,8 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 73%;
-<<<<<<< HEAD
-  width: 49%;
-  border-radius: 20px;
-=======
   width: 56%;
   border-radius: 13px;
->>>>>>> homepage-latest
   padding: 0 12%;
 
 }
@@ -592,9 +587,6 @@ body {
 #world-rank,
 #asia-rank {
   display: flex;
-<<<<<<< HEAD
-  border-radius: 16px;
-=======
 }
 
 .founded-in {
@@ -619,5 +611,4 @@ body {
 
 .grow:hover {
   transform: scale(1.3);
->>>>>>> homepage-latest
 }

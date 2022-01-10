@@ -369,6 +369,10 @@ body {
   font-weight: 300;
 }
 
+#our-mission-heading {
+  width: 14%;
+}
+
 .our-mission-para {
   text-align: right;
 }
@@ -412,7 +416,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding: 0 7%;
 }
 
@@ -542,7 +545,10 @@ body {
   position: absolute;
   top: 55%;
   grid-template-columns: repeat(4%, auto);
+  padding: 0 7.185rem;
+
 }
+ 
 
 .info-wrapper {
   grid-template-columns: repeat(4, auto);
@@ -555,8 +561,13 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 73%;
+<<<<<<< HEAD
   width: 49%;
   border-radius: 20px;
+=======
+  width: 56%;
+  border-radius: 13px;
+>>>>>>> homepage-latest
   padding: 0 12%;
 
 }
@@ -581,5 +592,32 @@ body {
 #world-rank,
 #asia-rank {
   display: flex;
+<<<<<<< HEAD
   border-radius: 16px;
+=======
+}
+
+.founded-in {
+  display: flex;
+}
+
+.planes-built {
+  display: flex;
+}
+
+.world-rank {
+  display: flex;
+}
+
+.asia-rank {
+  display: flex;
+}
+
+.grow { 
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.3);
+>>>>>>> homepage-latest
 }

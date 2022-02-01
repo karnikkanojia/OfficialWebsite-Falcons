@@ -69,6 +69,7 @@ infoTitles.forEach( infoTitle => {
 
 const vulcanTail = document.querySelector('#vulcantail');
 const vulcanTailUpper = document.querySelector("#vulcantailupper");
+const vulcanTailUpper2 = document.querySelector("#vulcantailupper2");
 const aboutUsPara = document.querySelector(".about-us-para");
 const frontVulcan = document.querySelector('.bg-front-vulcan');
 const contactWrapper = document.querySelector(".contact-wrapper");
@@ -85,6 +86,8 @@ function bootstrapSize() {
     vulcanTail.classList.add('w-100');
     vulcanTailUpper.classList.add('h-50');
     vulcanTailUpper.classList.add('w-100');
+    vulcanTailUpper2.classList.add('h-50');
+    vulcanTailUpper2.classList.add('w-100');
     aboutUs.classList.add('w-70');
     contactWrapper.classList.add('h-100');
     mapsSection.classList.add('h-50');
@@ -98,6 +101,8 @@ function bootstrapSize() {
     vulcanTail.classList.remove('h-50');
     vulcanTailUpper.classList.remove('h-50');
     vulcanTailUpper.classList.remove('w-100');
+    vulcanTailUpper2.classList.remove('h-50');
+    vulcanTailUpper2.classList.remove('w-100');
     vulcanTail.classList.remove('w-100');
     aboutUs.classList.remove('w-70'); 
     contactWrapper.classList.remove('h-100');

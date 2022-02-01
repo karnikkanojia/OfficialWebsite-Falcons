@@ -33,6 +33,10 @@ body {
   padding: 0;
 }
 
+#vulcantailupper2 {
+  display: none;
+}
+
 .navbar-brand {
   width: 40%;
 }
@@ -238,14 +242,15 @@ body {
 
 @media (min-width: 1200px) {
   .work {
-    margin-right: 3%;
-    float: right;
-    position: relative;
-    margin-top: -37%;
-    height: 40%;
+    position: absolute;
+    z-index: 10;
+    right: 2%;
+    height: fit-content;
+    top: 28%;
   }
+
   .links {
-    padding-top: 170%;
+    padding-top: 160%;
   }
 }
 

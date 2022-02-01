@@ -33,17 +33,18 @@
   margin: 0 auto;
 }
 
+.cover-img {
+  object-fit: cover;
+}
+
 #menuToggle {
   display: none;
   color: #000;
 }
 
 /*Flagships*/
-
 .flagships {
-  margin-top: 70px !important;
-  /* margin-left: 0% !important;
-  margin-right: 0% !important; */
+  margin-top: 8vh !important;
 }
 
 .nopadding {
@@ -202,4 +203,17 @@
   .footer {
     padding: 20px;
   }
+}
+
+.flaships {
+  margin-top: 59px;
+}
+
+.flagship-heading {
+  font-size: 36px;
+  padding: 17% 8% 5%;
+}
+
+.flagship-content {
+  font-size: 18px;
 }

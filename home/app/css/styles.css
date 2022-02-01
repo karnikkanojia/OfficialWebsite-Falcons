@@ -52,11 +52,6 @@ body {
   margin: 0 auto;
 }
 
-#menuToggle {
-  display: none;
-  color: #000;
-}
-
 .super-center {
   display: grid;
   place-items: center;
@@ -134,7 +129,7 @@ body {
   padding-left: 2%;
   height: 100%;
   width: 100%;
-  background: url(../../assets/vulcan_laptop.png) no-repeat center top;
+  background: url(../../assets/vulcan_laptop.png) no-repeat center top 80%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

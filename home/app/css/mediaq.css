@@ -3,13 +3,7 @@
   body {
     overflow-x: hidden !important;
   }
-  #vulcan-text-large {
-    display: none;
-  }
-
-  #airavat-text-large {
-    display: none;
-  }
+  
   .buttons {
     font-family: "Biryani", "sans-serif";
     font-weight: 600;

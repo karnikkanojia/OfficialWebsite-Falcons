@@ -37,11 +37,6 @@
   object-fit: cover;
 }
 
-#menuToggle {
-  display: none;
-  color: #000;
-}
-
 /*Flagships*/
 .flagships {
   margin-top: 8vh !important;

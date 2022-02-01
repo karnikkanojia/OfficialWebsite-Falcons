@@ -3,13 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" type="image/jpg" href="./assets/logoblacka.png" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="home/assets/logoblacka.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app/css/styles.css" />
-    <link rel="stylesheet" href="app/css/form.css" />
-    <link rel="stylesheet" href="app/css/keyframes.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="app/css/normalize.css" />
+    <link rel="stylesheet" href="home/app/css/styles.css" />
+    <link rel="stylesheet" href="home/app/css/form.css" />
+    <link rel="stylesheet" href="home/app/css/keyframes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Biryani&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="home/app/css/normalize.css" />
+    <link rel="stylesheet" href="home/app/css/mediaq.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,51 +78,56 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <title>Assailing Falcons</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-04C6SSEMBZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-04C6SSEMBZ');
+</script>
   </head>
   <body>
     <div class="landing">
-      <div class="nav-wrapper super-center">
-        <nav role="navigation" class="navbar">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>Flagships</li></a>
-              <a href="#"><li>Gallery</li></a>
-              <a href="#"><li>Achievements</li></a>
-              <a href="#"><li>Contact Us</li></a>
-            </ul>
-          </div>
-        </nav>
-        <img src="/assets/falconslogofull.png" id="falcon-logo" />
-      </div>
       <div class="wrapper super-center">
         <div class="vulcancontainer">
           <div class="text-landing">
             <h1 class="title">ASSAILING FALCONS</h1>
-            <p>Most experienced Aero design team of VIT University.
-              We design and fabricate advanced class RC aircraft.
+            <p>
+              Most experienced Aero Design Team of VIT University. We design and
+              fabricate advanced class RC aircraft.
             </p>
             <div class="buttons">
-              <button type="button" class="btn btn-outline-dark explore-btn">
-                Brochure
-              </button>
-              <!-- <button type="button" class="btn btn-light explore-btn">Explore</button> -->
-              <button type="button" class="btn btn-light brochure-btn">
-                <i class="fas fa-eye"></i>Explore
-              </button>
+              <a
+                role="button"
+                href="home/docs/brochure.pdf"
+                target="_blank"
+                class="btn btn-outline-dark brochure-btn"
+              >
+                <i class="fas fa-book-reader new"></i>Brochure
+              </a>
             </div>
           </div>
+
           <div class="arrow-wrapper">
             <div class="ico animated">
-              <div class="circle circle-top"></div>
               <div class="circle circle-main"></div>
-              <div class="circle circle-bottom"></div>
-
               <svg
                 class="svg"
                 version="1.1"
@@ -114,142 +171,869 @@
           </div>
         </div>
       </div>
+      <div class="work">
+        <div class="links">
+          <a
+            class="footer-link"
+            href="https://www.facebook.com/AssailingFalcons/"
+            target="_blank"
+          >
+            <img class="facebook" src="home/assets/facebook.png">
+          </a>
+        </div>
+        <div class="links">
+          <a
+            class="footer-link"
+            href="https://twitter.com/vitu_falcons?lang=en"
+            target="_blank"
+          >
+            <img class="twitter" src="home/assets/twitter.png">
+          </a>
+        </div>
+        <div class="links">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/company/assailing-falcons/"
+            target="_blank"
+          >
+            <img class="linkedin" src="home/assets/linkedin.png">
+          </a>
+        </div>
+        <div class="links">
+          <a
+            class="footer-link"
+            href="https://www.instagram.com/assailingfalcons/"
+            target="_blank"
+          >
+            <img class="instagram" src="home/assets/instagram.png">
+          </a>
+        </div>
+      </div>
     </div>
+    <section id="title">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              id="falcon-logo"
+              src="home/assets/falconslogofull.png"
+              alt="logo.png"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><span text-black>Home</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="achievements.html"
+                  ><span text-black>Achievements</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="flagships.html"
+                  ><span text-black>Flagships</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery-page.html"
+                  ><span text-black>Gallery</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section"
+                  ><span text-black>Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
     <div class="team-intro">
-      <h1 id="vulcan-text-large">VULCAN</h1>
-      <h1 id="airavat-text-large">AIRAVAT</h1>
       <div class="about-us wrapper">
         <div class="content-wrapper" id="about-us-content">
-          <h1 class="title">ABOUT US</h1>
-          <div id="vulcantail">
-            <span class="overlay" />
-          </div>
-          <div class="about-us-para">
+          <div id="vulcantail" loading="lazy" data-aos="fade-left"></div>
+          <div class="about-us-para" data-aos="fade-right">
+            <h1 class="title" id="about-us-heading">
+              <!--ABOUT US-->
+            </h1>
             Assailing Falcons is one of the most distinguished members of SAE
             International. The team brings together engineers from a variety of
             backgrounds that are involved in aircraft design and manufacturing,
             providing them with professional expertise and hands-on knowledge.
+            The team's goal is to allow students to better themselves and hone
+            their skills by embarking on a journey of learning, technical
+            experience and achievement.
           </div>
         </div>
       </div>
       <div class="our-mission wrapper">
         <div class="content-wrapper" id="our-mission-content">
-          <h1 class="title">OUR
-            MISSION</h1>
-          <div class="our-mission-para">
-            As a team, we aim to grab the highest laurels for the country and
-            construct aerodynamically efficient aircrafts. We tend not only to
-            achieve our mission statement of the competition but also learn and
-            gather deep knowledge about avionics and aeronautics for further
-            field development.
+          <div class="our-mission-para" data-aos="fade-left">
+            <h1 class="title" id="our-mission-heading">
+              <!--OUR
+                                  MISSION-->
+            </h1>
+            <p>
+              As a team, we aim to grab the highest laurels for the country and
+              construct aerodynamically efficient aircrafts. We tend not only to
+              achieve our mission statement of the competition but also learn
+              and gather deep knowledge about avionics and aeronautics for
+              further field development.We work with utmost passion and focus to
+              manifest airplanes which are capable of more than competitions.
+            </p>
           </div>
-          <div id="vulcantailupper">
-            <span class="overlay" />
+          <div id="vulcantailupper" loading="lazy" data-aos="fade-right"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper achievements">
+      <div class="bg-front-vulcan h-60"></div>
+      <div class="team-info">
+        <div class="super-center info-wrapper">
+          <div class="btn btn-dark" id="founded-in" data-aos="fade-right">
+            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+            <h5 class="card-title">Founded In</h5>
+            <span class="card-value"><span class="counter">2010</span></span>
+          </div>
+          <div class="btn btn-dark" id="planes-built" data-aos="fade-up">
+            <i class="fas fa-plane fa-2x"></i>
+            <h5 class="card-title">RC Planes Built</h5>
+            <span class="card-value"><span class="counter">10</span>+</span>
+          </div>
+          <div class="btn btn-dark" id="world-rank" data-aos="fade-up">
+            <i class="fas fa-trophy fa-2x"></i>
+            <h5 class="card-title">World Rank</h5>
+            <span class="card-value"><span class="counter">5</span>th</span>
+          </div>
+          <div class="btn btn-dark" id="asia-rank" data-aos="fade-left">
+            <i class="fas fa-star fa-2x"></i>
+            <h5 class="card-title">Asia/Pacific Rank</h5>
+            <span class="card-value"><span class="counter">1</span>st</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="wrapper achievements">
-      <div class="super-center info-sec">
+    <div class="departments-container wrapper">
+      <section>
+        <div class="container">
+          <div class="section-title">
+            <h2>Departments</h2>
+            <span class="section-separator"></span>
+          </div>
+        </div>
+        <div class="testimonials-carousel-wrap">
+          <div class="listing-carousel-button listing-carousel-button-next">
+            <i class="fa fa-caret-right"></i>
+          </div>
+          <div class="listing-carousel-button listing-carousel-button-prev">
+            <i class="fa fa-caret-left"></i>
+          </div>
+          <div class="testimonials-carousel">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/avionics_icon.png" />
+                    </div>
 
-      </div>
-      <div class="bg-front-vulcan">
-      </div>
-      
+                    <div class="testimonials-text">
+                      <p>
+                        The avionics department designs and implements
+                        electronic systems at par with the rest of the aircraft
+                        to control and communicate with the craft. We use
+                        commercially available flight controllers as well as
+                        microcontrollers to develop and test our own logics
+                        while playing with a host of sensors and actuators. Our
+                        aim is also to go beyond the requirements of the mission
+                        statements of the competitions we participate in,
+                        venture deeper into the fields of UAVs and autonomous
+                        flight systems, using custom built algorithms, efficient
+                        electronics and different computer vision and image processing techniques.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Avionics</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+               
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/design_icon.png" />
+                    </div>
+                    <div class="testimonials-text">
+                      <p>
+                        One of the most important part of building an aircraft
+                        is ‘design’. To design an aircraft that are admired by
+                        the likes of engineers at Lockheed Martin and Boeing, we
+                        give design research paramount importance. Multiple
+                        factors such as control surface sizing, drag reduction,
+                        crosswind handling capability, air-foil and fuselage
+                        design analysis are taken into consideration. We design
+                        aircraft best suited for peak performance in a
+                        particular location. After extensive research,the design
+                        team iterate and finalize factors such as dimension of
+                        wings based on the lift requirements, tail dimension as
+                        per stability requirements and control surface design as
+                        per roll rate and estimated crosswind.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Design</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/propulsion_icon.png" />
+                    </div>
+                
+                    <div class="testimonials-text">
+                      <p>
+                        Propulsion system is vital to an aircraft. It gives life to the aircraft body. Our aircraft propulsion system consists
+                        of either an electric motor or an IC engine to generate the required power which drives a propeller to generate the
+                        required thrust. A light weight aircraft with high lift capacity is ineffective without an adequately powerful
+                        propulsion system. At Assailing Falcons, we experiment using a wide range of propellers in order to select the optimum
+                        propeller for our competition mission requirements. This propeller analysis, coupled with our highly efficient aircraft,
+                        has given us many international accolades.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Propulsion</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/management_icon.png" />
+                    </div>
+
+                    <div class="testimonials-text">
+                      <p>
+                        Management involves the tactical aspect of the
+                        day-to-day functioning of the team. Management regulates
+                        the working environment to make sure that team is moving
+                        impudently. The team faces umpteen responsibilities each
+                        day, one of which is managing events and people. The
+                        Management team is responsible for the smooth
+                        functioning of each and every department in the team.
+                        Further, management looks into documentation and
+                        sponsorships. This helps the team financially while
+                        giving a face to the team.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Management</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/cfd_icon.png" />
+                    </div>
+                
+                    <div class="testimonials-text">
+                      <p>
+                      Computational Fluid Dynamics is performed using ANSYS Fluent and Star CCM+ to validate the results provided by the
+                      design department. This gives an accurate estimation of Lift, Drag & Pressure Distribution associated with the aircraft.
+                      This result can help us pin-point the source of maximum drag or minimum lift which allows us to modify the overall
+                      aerodynamic characteristics of the aircraft. This aircraft simulation shows the airflow distribution around an aircraft
+                      design at low subsonic incompressible flow regime.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>CFD</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+             
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/propulsion_icon.png" />
+                    </div>
+                
+                    <div class="testimonials-text">
+                      <p>
+                        Propulsion system is vital to an aircraft. It gives life to the aircraft body. Our aircraft propulsion system consists
+                        of either an electric motor or an IC engine to generate the required power which drives a propeller to generate the
+                        required thrust. A light weight aircraft with high lift capacity is ineffective without an adequately powerful
+                        propulsion system. At Assailing Falcons, we experiment using a wide range of propellers in order to select the optimum
+                        propeller for our competition mission requirements. This propeller analysis, coupled with our highly efficient aircraft,
+                        has given us many international accolades.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Propulsion</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar">
+                      <img src="home/assets/structure_icon.png" />
+                    </div>
+
+                    <div class="testimonials-text">
+                      <p>
+                      This department models the aircraft on 3D modelling
+                      software like SolidWorks, CATIA etc. while utilizing the
+                      design parameters, to visualize the actual aircraft,
+                      taking us a step closer to bringing our dreams into
+                      reality. Structural analysis is done using software like
+                      ANSYS Static Structural module. The most important role
+                      of this department is to incorporate a strong yet light
+                      structure by making use of extensive, in-house
+                      fabricated composites. Further, the structures
+                      department designs an efficient and reliable payload
+                      dropping mechanism, so as to carry and drop the maximum
+                      payload. This department also designs the landing gear
+                      system for the aircraft.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Structures</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End of Depts-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="seperator"></div>
-    <div class="wrapper super-center sponsors-section">
-      <div class="sponsor-text">
-        with ❤️ to our sponors
-      </div>
+
+    <div class="sponsors-section wrapper super-center" id="sponsors-wide">
+      <div class="sponsor-text">with ❤️ to our sponsors</div>
       <div class="sponsors-1">
-        <img src="/assets/sponsors/simscale.png" alt="simscale">
-        <img src="/assets/sponsors/tmotors.png" alt="tmotors">
-        <img src="/assets/sponsors/holybro.png" alt="holybro">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/siemens.png"
+          alt="simscale"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/tmotors.png"
+          alt="tmotors"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/holybro.png"
+          alt="holybro"
+        />
       </div>
       <div class="sponsors-2">
-        <img src="/assets/sponsors/nxp.png" alt="nxp">
-        <img src="/assets/sponsors/redbull.png" alt="redbull">
-        <img src="/assets/sponsors/apc.png" alt="apc">
-        <img src="/assets/sponsors/hacker.png" alt="hacker"> 
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/nxp.png"
+          alt="nxp"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/redbull.png"
+          alt="redbull"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/apc.png"
+          alt="apc"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/hacker.png"
+          alt="hacker"
+        />
       </div>
       <div class="sponsors-3">
-        <img src="/assets/sponsors/xoar.png" alt="xoar"> 
-        <img src="/assets/sponsors/solidworks.png" alt="solidworks"> 
-        <img src="/assets/sponsors/matlab.png" alt="matlab"> 
-        <img src="/assets/sponsors/ansys.png" alt="ansys"> 
-        <img src="/assets/sponsors/mastercam.png" alt="mastercam"> 
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/xoar.png"
+          alt="xoar"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/solidworks.png"
+          alt="solidworks"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/matlab.png"
+          alt="matlab"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/ansys.png"
+          alt="ansys"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/mastercam.png"
+          alt="mastercam"
+        />
       </div>
       <div class="sponsors-4">
-        <img src="/assets/sponsors/bhor.png" alt="bhor"> 
-        <img src="/assets/sponsors/simscale.png" alt="simscale"> 
-        <img src="/assets/sponsors/sparkfun.png" alt="sparkfun"> 
-        <img src="/assets/sponsors/easycomposites.png" alt="easycomp"> 
-        <img src="/assets/sponsors/altair.png" alt="altair"> 
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/bhor.png"
+          alt="bhor"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/simscale.png"
+          alt="simscale"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/sparkfun.png"
+          alt="sparkfun"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/easycomposites.png"
+          alt="easycomp"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/altair.png"
+          alt="altair"
+        />
       </div>
     </div>
-    <div class="seperator"></div>
-    <div class="contact wrapper">
+    <div class="sponsors-section wrapper super-center" id="sponsors-phone">
+      <div id="sponsor-text">with ❤️ to our sponsors</div>
+      <div class="sponsors-mobile-1">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/siemens.png"
+          alt="simscale"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/tmotors.png"
+          alt="tmotors"
+        />
+      </div>
+      <div class="sponsors-mobile-2">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/holybro.png"
+          alt="holybro"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/nxp.png"
+          alt="nxp"
+        />
+      </div>
+      <div class="sponsors-mobile-3">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/redbull.png"
+          alt="redbull"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/apc.png"
+          alt="apc"
+        />
+      </div>
+      <div class="sponsors-mobile-4">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/hacker.png"
+          alt="hacker"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/xoar.png"
+          alt="xoar"
+        />
+      </div>
+      <div class="sponsors-mobile-5">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/solidworks.png"
+          alt="solidworks"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/matlab.png"
+          alt="matlab"
+        />
+      </div>
+      <div class="sponsors-mobile-6">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/ansys.png"
+          alt="ansys"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/mastercam.png"
+          alt="mastercam"
+        />
+      </div>
+      <div class="sponsors-mobile-7">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/bhor.png"
+          alt="bhor"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/simscale.png"
+          alt="simscale"
+        />
+      </div>
+      <div class="sponsors-mobile-8">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/sparkfun.png"
+          alt="sparkfun"
+        />
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/easycomposites.png"
+          alt="easycomp"
+        />
+      </div>
+      <div class="sponsors-mobile-9">
+        <img
+          class="grow"
+          loading="lazy"
+          src="home/assets/sponsors/altair.png"
+          alt="altair"
+        />
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="container">
+      <div class="section-title" id="testimonial-heading">
+        <h2>Testimonials</h2>
+        <span class="section-separator"></span>
+      </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="customers-testimonials" class="owl-carousel">
+    
+              
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-circle" src="home/assets/sree.jpeg" alt="">
+                  <p>Importance given to teamwork culture and accountability makes
+                  Falcons one of the best student groups to work with. Had an
+                  amazing experience sharing ideas and innovating with
+                  like-minded people</p>
+                </div>
+                <div class="testimonial-name">S.Shree Harsha</div>
+              </div>
+         
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-circle" src="home/assets/bhuvesh.jpeg" alt="">
+                  <p>My time in Assailing Falcons was immense. It had the right
+                  atmosphere of learning and working together which you won't
+                  find anywhere else. The hard work and dedication shown by the
+                  team members is second to none. I am extremely grateful to
+                  have worked in the team amongst such talented and passionate
+                  people.</p>
+                </div>
+                <div class="testimonial-name">Bhuvesh Kaushik</div>
+              </div>
+            
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-circle" src="home/assets/gagandeep.jpeg" alt="">
+                  <p>It’s been an absolute pleasure to serve one of the oldest
+                  aeromodelling team of India. With an opportunity to work with
+                  like minds guided by some really experienced people around,
+                  this team help you build some serious expertise in this field
+                  and might help in building your transition career curve
+                  further.</p>
+                </div>
+                <div class="testimonial-name">Gagandeep Singh Kukreja</div>
+              </div>
+             
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-circle" src="home/assets/dheekshinn.jpeg" alt="">
+                  <p>Assailing Falcons is a meaningful experience that gives beyond
+                  what it promises. I was lucky enough to hold on to it, to see
+                  the wonders it does to everyone who was part of it. The
+                  exposure one gets through the process, set by the high
+                  standard of the Team and its history will split a fellow
+                  falcons from the rest!</p>
+                </div>
+                <div class="testimonial-name">Dheekshinn</div>
+              </div>
+              
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-circle" src="home/assets/vibhor.jpeg" alt="">
+                  <p>Team Assailing Falcons gave me a chance to apply my textbook
+                  learnings to real-world challenges through participation in
+                  SAE Aero Design East 2020 held in Florida, United States.
+                  Aside from technical capabilities , the Team instilled in me
+                  the ability to think clearly, organize information,
+                  problem-solving skills, devotion, and leadership qualities</p>
+                </div>
+                <div class="testimonial-name">Vibhor Rajoria</div>
+              </div>
+
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-circle" src="home/assets/jainendra.jpeg" alt="">
+                  <p>A group of curious aerospace minds with a high sense of
+                  innovation, dedication and professionalism, who never fail to
+                  beat their own records with each advancing year. The knowledge
+                  and experience that you walk away with are boundless. It was
+                  my privilege to be a small part of this!!</p>
+                </div>
+                <div class="testimonial-name">Jainendra Deshmukh</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    </div>
+
+    <div class="contact wrapper" id="contact-section">
       <div class="contact-wrapper">
         <div class="form-wrapper">
           <h2>Contact Us</h2>
-          <form class="contact-form">
+          <form
+            target="_blank"
+            class="contact-form"
+            action="https://formsubmit.co/2a653e9a346c232fc9e43956b650ee85"
+            method="POST"
+          >
             <label class="custom-field" id="company-name">
-              <input type="text" placeholder="&nbsp;" />
+              <input
+                required="required"
+                type="text"
+                placeholder="&nbsp;"
+                name="Company"
+              />
               <span class="placeholder">Your Company Name</span>
-            </label>
-            <label class="custom-field" id="nature-of-business">
-              <input type="text" placeholder="&nbsp;" />
-              <span class="placeholder">Nature of Business</span>
             </label>
             <div class="address-sec-wrapper">
               <label class="custom-field" id="address">
-                <input type="text" placeholder="&nbsp;" />
+                <input
+                  required="required"
+                  type="text"
+                  placeholder="&nbsp;"
+                  name="Address"
+                />
                 <span class="placeholder">Address</span>
               </label>
               <label class="custom-field" id="postcode">
-                <input type="number" min="0" placeholder="&nbsp;" />
+                <input
+                  type="number"
+                  min="0"
+                  placeholder="&nbsp;"
+                  name="Post-Code"
+                />
                 <span class="placeholder">Postcode</span>
               </label>
             </div>
             <label class="custom-field" id="contact-name">
-              <input type="text" placeholder="&nbsp;" />
+              <input
+                required="required"
+                type="text"
+                placeholder="&nbsp;"
+                name="Person Name"
+              />
               <span class="placeholder">Name</span>
             </label>
             <label class="custom-field" id="contact-phone">
-              <input type="number" placeholder="&nbsp;" />
+              <input
+                type="number"
+                required="required"
+                placeholder="&nbsp;"
+                name="Contact Number"
+              />
               <span class="placeholder">Phone Number</span>
             </label>
             <label class="custom-field" id="contact-email">
-              <input type="email" placeholder="&nbsp;" />
+              <input
+                type="email"
+                required="required"
+                placeholder="&nbsp;"
+                name="Contact Email"
+              />
               <span class="placeholder">E-mail</span>
             </label>
-            <button type="button" class="btn btn-dark" id="contact-submit-btn">
+            <label class="custom-field" id="nature-of-business">
+              <textarea placeholder="&nbsp;" name="Message"></textarea>
+              <span class="placeholder">Message</span>
+            </label>
+            <button
+              type="submit"
+              class="btn btn-dark btn-block"
+              id="contact-submit-btn"
+            >
               Submit
             </button>
           </form>
         </div>
         <div class="maps-link">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423776!2d79.15722245022293!3d12.971742990810927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1641715073119!5m2!1sen!2sin"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+          <iframe
+            id="map-med"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423776!2d79.15722245022293!3d12.971742990810927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1641715073119!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <iframe
+            id="map-small"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7776.003392560281!2d79.159416!3d12.971743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1641919857676!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </div>
     <div class="seperator" id="footer">
-      <div class="copyright-text">
-        © 2022 Assailing Falcons
+      <div class="copyright-text">© 2022 Team Assailing Falcons</div>
+      <div id="my_links" class="d-flex justify-content-between">
+        <a
+          class="footer-link"
+          href="https://www.facebook.com/AssailingFalcons/"
+          target="_blank"
+        >
+          <img class="facebook" src="home/assets/facebook.png">
+        </a>
+
+        <a
+          class="footer-link"
+          href="https://twitter.com/vitu_falcons?lang=en"
+          target="_blank"
+        >
+          <img class="twitter" src="home/assets/twitter.png">
+        </a>
+
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/company/assailing-falcons/"
+          target="_blank"
+        >
+          <img class="linkedin" src="home/assets/linkedin.png">
+        </a>
+
+        <a
+          class="footer-link"
+          href="https://www.instagram.com/assailingfalcons/"
+          target="_blank"
+        >
+          <img class="instagram" src="home/assets/instagram.png">
+        </a>
       </div>
       <div class="designed-by-text">
-        designed & developed with 😎 by falcons
+        designed & developed by
+        <span class="faclons-logo"
+          ><img src="home/assets/falconlogosm.png"
+        /></span>
       </div>
     </div>
-
   </body>
-  <script src="app/js/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+  <script src="home/app/js/dept.js"></script>
+  <script src="home/app/js/app.js"></script>
+  <script src="home/app/js/navbar.js"></script>
+  <script src="home/app/js/test.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 500,
+    });
+  </script>
+  <script>
+    $(".option").click(function () {
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
 </html>

@@ -1,0 +1,1043 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none !important;
+}
+
+html {
+  height: 100vh;
+  font-size: max(16px, 100%);
+  box-sizing: border-box;
+  background-color: #fbf7f2;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1rem;
+  overflow-x: hidden !important;
+}
+
+#title {
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 0;
+}
+
+.navbar-brand {
+  width: 40%;
+}
+.nav-item {
+  padding: 0 20px;
+}
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#falcon-logo {
+  height: 2rem;
+  width: auto;
+  margin: 0 auto;
+}
+
+#menuToggle {
+  display: none;
+  color: #000;
+}
+
+.super-center {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing {
+  position: relative;
+}
+
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.header-links {
+  width: 60%;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font: "Montserrat", "sans-serif";
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.header-logo {
+  padding: 19px 16px;
+  width: 40%;
+}
+
+.header-links > a {
+  position: relative;
+  color: black;
+}
+
+.header-links > a:hover::before {
+  opacity: 1;
+}
+
+.header-links > a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: black;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  margin-bottom: -0.375rem;
+  opacity: 0;
+  border-radius: 50px;
+  transition: opacity 200ms ease-in-out;
+}
+
+#falcon-logo {
+  height: 2.5rem;
+  width: auto;
+  margin: 0 auto;
+}
+
+#menuToggle {
+  display: none;
+}
+
+.vulcancontainer {
+  padding-left: 2%;
+  height: 100%;
+  width: 100%;
+  background: url(../../assets/vulcan_laptop.png) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.text-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  padding: 0 20px;
+}
+
+.text-landing > .title {
+  font-size: clamp(1.375rem, 5vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0.8125rem 0;
+}
+
+.text-landing > p {
+  font-family: "Biryani", "sans-serif";
+  color: white;
+}
+
+.text-landing > p {
+  width: 70%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, min(149px, 47%));
+  grid-column-gap: 1.3125rem;
+}
+
+.buttons > .btn {
+  font-family: "Biryani", "sans-serif";
+  font-weight: 600;
+  padding: 0.625rem 10px;
+  padding-top: min(0.875rem, 34px);
+  font-size: 0.875rem;
+  width: max(10rem, 23%);
+}
+
+.new {
+  float: left;
+  padding-left: 20%;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  top: 90%;
+  left: 47%;
+}
+
+.ico {
+  margin: 0 auto;
+  text-align: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: url("#goo");
+}
+.ico .circle {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 3.125rem;
+  width: 3.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform-origin: 0%;
+}
+.ico .circle.circle-top {
+  height: 16.6666666667px;
+  width: 20.8333333333px;
+  -webkit-animation: blob-1-anim 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: blob-1-anim 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  z-index: 0;
+  top: 0;
+}
+.ico .st-arrow {
+  fill: #55544f;
+  -webkit-animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards
+    infinite;
+  animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  perspective: 9000px;
+  transform: translateZ(0);
+  transform-origin: bottom;
+}
+
+.ico:hover {
+  cursor: pointer;
+}
+
+.svg {
+  z-index: 9;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .work {
+    margin-right: 3%;
+    float: right;
+    position: relative;
+    margin-top: -37%;
+    height: 40%;
+  }
+  .links {
+    padding-top: 170%;
+  }
+}
+
+.team-intro {
+  position: relative;
+}
+
+#about-us-heading {
+  font-weight: 700;
+}
+
+#our-mission-heading {
+  font-weight: 700;
+  margin-left: 22%;
+}
+
+#team-intro-seperator {
+  display: none;
+}
+
+#about-us-content,
+#our-mission-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 4% clamp(6rem, 18%, 7rem);
+}
+
+#our-mission-content {
+  padding: 4% clamp(3rem, 18%, 4rem);
+}
+
+#about-us-content > .title,
+#our-mission-content > .title {
+  top: 21%;
+  z-index: 1;
+}
+
+#our-mission-content > .title {
+  text-align: right;
+  top: 4rem;
+}
+#about-us-content > .title {
+  text-align: right;
+  top: 4rem;
+  margin-left: 4%;
+}
+
+#vulcantail {
+  background: url(../../assets/vulcantail1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 30rem;
+  width: 35rem;
+}
+
+.about-us-para,
+.our-mission-para {
+  width: 42%;
+  margin-top: 4rem;
+  font: "Mada", "sans-serif";
+  font-weight: 300;
+  padding: 0px clamp(2rem, 60%, 3rem);
+  font-size: clamp(16px, 1.7vw, 20px);
+  text-align: justify;
+}
+
+#our-mission-heading {
+  width: 80%;
+  text-align: right;
+}
+
+#our-mission-content > .title {
+  top: 25%;
+}
+
+#vulcantailupper {
+  background: url(../../assets/vulcantailupper1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 30rem;
+  width: 35rem;
+}
+
+.seperator {
+  background-color: #dab783;
+  width: 100%;
+  height: 10vh;
+}
+
+.contact {
+  background-color: #fbf7f2;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 7%;
+}
+
+.form-wrapper > h2 {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.maps-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 0 0;
+}
+
+.departments-container {
+  height: fit-content;
+}
+
+.address-sec-wrapper {
+  display: flex;
+}
+
+#address {
+  margin-right: 10px;
+}
+
+#postcode {
+  margin-left: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#footer {
+  font-family: "Mada", "sans-serif";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem 0 5rem;
+}
+
+.fa-eye {
+  size: 5px;
+  margin-right: 12px;
+}
+
+.bg-front-vulcan {
+  background: url(../../assets/vulcan_achievements.png) no-repeat center bottom
+    40%;
+  background-size: 125%;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0%;
+}
+
+#sponsor-text {
+  font-size: 1rem;
+}
+
+.sponsors-section {
+  padding: 5% 12%;
+  background-color: #fbf7f2;
+}
+
+.sponsors-1,
+.sponsors-2,
+.sponsors-3,
+.sponsors-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsors-1 > img,
+.sponsors-2 > img,
+.sponsors-3 > img,
+.sponsors-4 > img {
+  height: auto;
+}
+
+.sponsors-1 {
+  width: 65%;
+}
+
+.sponsors-1 > img {
+  max-width: 28%;
+}
+
+.sponsors-2 {
+  width: 82%;
+}
+
+.sponsors-2 > img {
+  max-width: 14%;
+}
+
+.sponsors-3 {
+  width: 100%;
+}
+
+.sponsors-3 > img {
+  max-width: 14%;
+}
+
+.sponsors-4 {
+  width: 100%;
+}
+
+.sponsors-4 > img {
+  max-width: 14%;
+}
+
+.achievements {
+  position: relative;
+}
+
+#map-small {
+  display: none;
+}
+
+.team-info {
+  display: grid;
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+}
+
+.info-wrapper {
+  grid-template-columns: repeat(4, auto);
+}
+
+.info-wrapper > * {
+  background-color: #fbf7f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 73%;
+  width: 56%;
+  border-radius: 13px;
+  padding: 0 12%;
+}
+
+.info-wrapper h5 {
+  margin-top: 10%;
+  font-weight: 600;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+.info-wrapper .fa {
+  size: 1.375rem;
+}
+
+.info-wrapper span {
+  font-size: 1.375rem;
+}
+
+#founded-in,
+#planes-built,
+#world-rank,
+#asia-rank {
+  display: flex;
+  width: 11.25rem;
+  height: 250px;
+}
+
+.card-title {
+  font-size: 1.2rem !important;
+}
+
+.card-value {
+  font-size: 1.75rem !important;
+}
+.counter {
+  font-size: 2rem !important;
+}
+.founded-in {
+  display: flex;
+}
+
+.planes-built {
+  display: flex;
+}
+
+.world-rank {
+  display: flex;
+}
+
+.asia-rank {
+  display: flex;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.3);
+}
+
+section {
+  float: left;
+  position: relative;
+  padding: 30px 0;
+  background: #fcfcfd;
+  z-index: 1;
+  width: 100%;
+}
+.section-title {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.section-title p {
+  color: #7d93b2;
+  font-size: 13px;
+  line-height: 20px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.departments-container {
+  overflow-x: hidden;
+}
+
+.section-title h2 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.section-separator {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+.section-separator:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 3px;
+  width: 50px;
+  border-radius: 3px;
+  z-index: 2;
+  background-color: #6a757c;
+  margin-left: -25px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.listing-carousel-button {
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  z-index: 100;
+  cursor: pointer;
+  background: #dab783;
+  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
+  transition: all 200ms linear;
+  outline: none;
+  opacity: 1;
+  margin-right: 20px;
+}
+.listing-carousel-button.listing-carousel-button-next {
+  right: -30px;
+  padding-left: 30px;
+  border-radius: 60px 0 0 60px;
+  size: 10%;
+}
+.listing-carousel-button.listing-carousel-button-prev {
+  left: -30px;
+  padding-left: 50px;
+  border-radius: 0 60px 60px 0;
+}
+.listing-carousel-button.listing-carousel-button-next:hover {
+  right: -15px;
+  background: rgba(6, 27, 65, 0.4);
+}
+.listing-carousel-button.listing-carousel-button-prev:hover {
+  left: -15px;
+  background: rgba(6, 27, 65, 0.4);
+}
+.testi-item {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+.testimonials-text {
+  padding: 60px 15px 0px;
+  overflow: hidden;
+  background: #fbf7f2;
+  border: 1ps solid #f1f1f1;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.testimonials-text-after {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  color: #ccc;
+  opacity: 0.3;
+  font-size: 35px;
+  transition: all 400ms linear;
+  bottom: 25px;
+  right: 30px;
+}
+.testimonials-text-before {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  color: #ccc;
+  opacity: 0.3;
+  font-size: 35px;
+  transition: all 400ms linear;
+  top: 25px;
+  left: 30px;
+}
+.testimonials-text .listing-rating {
+  float: none;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.listing-rating i {
+  color: #007aff;
+}
+
+.testimonials-avatar {
+  margin-bottom: 40px;
+  margin-top: -40px;
+}
+
+.testimonials-avatar h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonials-carousel .swiper-slide {
+  padding: 30px 0;
+}
+.testi-avatar {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 90px;
+  height: 90px;
+  margin-left: -45px;
+  z-index: 20;
+}
+.testi-avatar img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 100%;
+  border: 6px solid #fff;
+  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
+}
+.swiper-slide-active .testimonials-text {
+  background: #fff;
+  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.4);
+}
+.testimonials-text p {
+  color: #878c9f;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-family: "Mada", "sans-serif";
+  text-align: justify;
+  padding: 20px 40px;
+}
+
+.text-link {
+  bottom: 0;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.03);
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+.swiper-slide-active .testi-item {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fab {
+  color: black;
+}
+
+.d-flex {
+  width: 15%;
+}
+
+.icon {
+  width: 1.5rem;
+  height: auto;
+}
+
+.copyright-text {
+  padding-left: 5px;
+}
+
+@media (max-width: 1000px) {
+  #falcon-logo {
+    height: 1.5rem;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #title {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  #falcon-logo {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+.testimonials-carousel-wrap {
+  height: 50%;
+}
+
+.sponsors-mobile-9 > img:nth-child(1) {
+  height: 47px;
+  margin-left: -10%;
+}
+
+.sponsors-mobile-1,
+.sponsors-mobile-2,
+.sponsors-mobile-3,
+.sponsors-mobile-4,
+.sponsors-mobile-5,
+.sponsors-mobile-6,
+.sponsors-mobile-7,
+.sponsors-mobile-8,
+.sponsors-mobile-9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 90px;
+}
+
+.sponsors-mobile-1 > img,
+.sponsors-mobile-2 > img,
+.sponsors-mobile-3 > img,
+.sponsors-mobile-4 > img,
+.sponsors-mobile-5 > img,
+.sponsors-mobile-6 > img,
+.sponsors-mobile-7 > img,
+.sponsors-mobile-8 > img,
+.sponsors-mobile-9 > img {
+  height: auto;
+  width: 42%;
+}
+
+#sponsors-phone > div:nth-child(1) {
+  text-align: center;
+}
+
+/* xoar logo */
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 26%;
+}
+
+/* altair logo */
+.sponsors-mobile-9 {
+  align-items: center;
+  width: 140%;
+  margin-left: 41px;
+}
+
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 26%;
+}
+
+.sponsors-mobile-7 > img:nth-child(1) {
+  width: 32%;
+}
+
+.sponsors-mobile-6 > img:nth-child(1) {
+  width: 36%;
+}
+
+.sponsors-mobile-2 > img:nth-child(2) {
+  width: 36%;
+}
+
+.faclons-logo img {
+  width: 20%;
+  height: auto;
+}
+
+.designed-by-text {
+  width: 20%;
+}
+
+#navbar_top {
+  background-color: #fbf7f2;
+}
+
+#about-us-content {
+  text-align: justify;
+}
+
+.about-us-para {
+  text-align: justify !important;
+}
+
+#about-us-heading {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  #our-mission-heading {
+    width: 69%;
+    margin-top: 2.75rem;
+  }
+}
+
+#our-mission-heading {
+  margin-right: 0;
+}
+
+.our-mission-para {
+  text-align: justify !important;
+}
+
+#about-us-heading {
+  text-align: left;
+}
+
+.shadow-effect {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ececec;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+#customers-testimonials .shadow-effect p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-weight: 400;
+  text-align: justify;
+}
+.testimonial-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: -17px auto 0;
+  display: table;
+  width: 80%;
+  background: #dab783;
+  padding: 9px 35px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+}
+
+#customers-testimonials .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 80px;
+  opacity: 0.2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  max-width: 90px;
+  margin: 0 auto 17px;
+  border-radius: 50%;
+}
+
+.testimonials {
+  height: 100vh;
+}
+
+#testimonial-heading {
+  margin-top: 40px;
+}
+
+.team-intro {
+  overflow-x: hidden;
+}
+
+.sponsors-mobile-9 {
+  width: 100%;
+  margin-left: -16px;
+}
+
+.sponsors-mobile-1 > img,
+.sponsors-mobile-2 > img,
+.sponsors-mobile-3 > img,
+.sponsors-mobile-4 > img,
+.sponsors-mobile-5 > img,
+.sponsors-mobile-6 > img,
+.sponsors-mobile-7 > img,
+.sponsors-mobile-8 > img,
+.sponsors-mobile-9 > img {
+  width: 43%;
+}
+
+.sponsors-mobile-1,
+.sponsors-mobile-2,
+.sponsors-mobile-3,
+.sponsors-mobile-4,
+.sponsors-mobile-5,
+.sponsors-mobile-6,
+.sponsors-mobile-7,
+.sponsors-mobile-8,
+.sponsors-mobile-9 {
+  padding: 0;
+}
+
+.sponsors-mobile-9 > img:nth-child(1) {
+  width: 156px;
+  height: auto;
+  margin-left: 26%;
+}
+
+.facebook,
+.twitter,
+.linkedin,
+.instagram {
+  width: 25px;
+  height: 25px;
+}

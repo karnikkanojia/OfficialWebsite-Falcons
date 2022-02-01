@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="achievements\app\css\styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="home/assets/logoblacka.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mada&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Biryani&display=swap" rel="stylesheet" />
+    <title>
+      Achievements
+    </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-04C6SSEMBZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-04C6SSEMBZ');
+</script>
+  </head>
+  <style>
+    body {
+      background-color: #fbf7f2;
+      overflow-x: hidden;
+    }
+
+    .col {
+      text-align: center;
+      background: #fbf7f2;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 70px;
+      height: 70px;
+    }
+    .container{
+      overflow-x: hidden;
+    }
+    
+     .container3 {
+      padding:3rem;
+      display: grid;
+      grid-gap: 2em;
+      margin-top: 60%
+    }
+
+    .container2 {
+      padding: 3em;
+      display: grid;
+      display: grid;
+      grid-gap: 2em;
+      /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+   }
+
+    .quote {
+      /* padding: 2em; */
+
+      border-radius: 0.3em;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 1);
+      padding: 5px 32px 10px 32px;
+      background: #ffffff;
+      box-sizing: border-box;
+      /* basic shadow */
+      box-shadow: 0px 7px 14px #d3dae2;
+      border-radius: 25px;
+    }
+
+
+    p {
+      margin-top: 0;
+      font-family: "Biryani", sans-serif;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 160%;
+      /* or 51px */
+
+      letter-spacing: 0.14px;
+      padding-top: 8px;
+      color: #000000;
+    }
+
+    h6 {
+      font-family: "Biryani", sans-serif;
+      font-style: normal;
+      font-weight: revert;
+      font-size: 15px;
+      line-height: 160%;
+      /* identical to box height, or 26px */
+      letter-spacing: 0.14px;
+      color: #534d4d;
+    }
+
+    .sae {
+      width: 100px;
+    }
+
+    .seds {
+      width: 150px;
+      padding-top: 20px;
+    }
+    .bits {
+      width: 60px;
+      padding-top: 10px;
+    }
+    .rank {
+      width: 70px;
+      float: right;
+      padding-top: 15px;
+      width:75px;
+      height: 75px;
+    }
+    .rank1 {
+      width: 70px;
+      float: right;
+      padding-top: 15px;
+      width: 90px;
+      height: 90px;
+    }
+
+
+    @media(max-width:1200px)
+    {
+      .container3 {
+      padding:3rem;
+      display: grid;
+      grid-gap: 2em;
+      margin-top: 75%
+    }
+    }
+    @media (min-width: 950px) {
+
+      .container2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container{
+      overflow-x: hidden;
+    }
+    }
+
+      @media (max-width: 1300px) {
+      .container{
+      overflow-x: hidden;
+    }
+    }
+
+    @media (max-width: 950px) {
+
+      .container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        margin-top: 40px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .container2 {
+        grid-template-columns: repeat(1, 1fr);
+        
+      }
+      .container{
+      overflow-x: hidden;
+      }
+    }
+
+    @media(max-width:1000px){
+      .container3 {
+      padding:3rem;
+      display: grid;
+      grid-gap: 2em;
+      margin-top: calc(100% - 150px);
+    }
+      .container{
+      overflow-x: hidden;
+    }
+      #falcon-logo {
+        height: 1.5rem;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #title {
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+      #falcon-logo {
+        height: 2rem;
+        width: auto;
+      }
+    }
+
+  </style>
+
+  <body>
+        <section id="title">
+        
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class='container-fluid'>
+              <a class="navbar-brand" href="index.html">
+                <img id="falcon-logo" src="home/assets/falconslogofull.png" alt="logo.png" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html"><span text-black>Home</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="achievements.html"><span text-black>Achievements</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="flagships.html"><span text-black>Flagships</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery-page.html"><span text-black>Gallery</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact-section"><span text-black>Contact</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </section>
+    <div class="wrapper" style="display: grid; place-items: center">
+      <div class="container" >
+        <img src='achievements/assets/images/vulcan_model.png' >
+      </div>
+      <div class="scroll-down"></div>
+    </div>
+      <div class="container3" height="100px">
+            <div class="quote">
+              <img src="achievements/assets/images/sae.jpg" class="sae" />
+              <img src="achievements/assets/images/5.png" class="rank1" />
+              <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2021</h1>
+              <h6>Lakeland, Florida, USA</h6>
+              <p>
+                Despite additional challenges faced due to COVID-19, the team worked diligently in innovating their 2021 flagship
+                'Vulcan'.Vulcan had enabled the team to brag 1st position in whole of Asia as well as in the technical design report that was
+                submitted. Vulcan is a single electric motor propelled aircraft. Using a combination of hard work and unique design;
+                the
+                flagship was made to meet the mission statement of 2021 that requires a system that can deliver colonists, habitats,
+                and
+                supplies on the surface of Mars.
+              </p>
+            </div>
+      </div>        
+      <div class="container2">
+
+        <div class="quote" >
+          <img src="achievements/assets/images/sae.jpg" class="sae" />
+          <img src="achievements/assets/images/3.PNG" class="rank" />
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2020</h1>
+          <h6>Lakeland, Florida, USA/6-8th March, 2020</h6>
+          <p>
+            Team’s 2020 Aircraft, “Airavat” is a single electric motor
+            propelled, high wing aircraft with a tricycle landing gear, capable
+            of lifting 38 pounds at a cruise velocity of 43ft/s. The aircraft is
+            also capable of releasing two autonomously guided colonist delivery
+            aircraft along with multiple supply payloads.
+          </p>
+        </div>
+
+        <div class="quote" >
+          <img src="achievements/assets/images/sae.jpg" class="sae" />
+          <img src="achievements/assets/images/4.PNG" class="rank" />
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2019</h1>
+          <h6>Fort Worth, Texas, USA/6-8th March, 2019</h6>
+          <p>
+            This was the most successful season the Team ever had. 2019’s Flagship
+            Redbird proved out to be one of the finest plane ever manufactured.
+            Despite of drastic rulebook changes with the completely new mission
+            statement team was successful in achieving 4th Overall ranking in
+            advanced class category.
+          </p>
+        </div>
+
+        <div class="quote" >
+          <img src="achievements/assets/images/sae.jpg" class="sae" />
+          <img src="achievements/assets/images/6.PNG" class="rank" />
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2018</h1>
+          <h6>Lakeland, Florida, USA/6-8th March, 2018</h6>
+          <p>
+          Zephyrus is indeed the majestic advanced class aircraft which definitely lives up to its name- The Greek god of winds.
+          It is a single-engine aircraft that can lift a total of 36 pounds and drop two payloads from an altitude of 175 ft, at a
+          cruising velocity of 43 ft/s. This very aircraft helped us secure worldwide 6th position, the best position in the Asia/
+          pacific region at the SAE Aero Design East Competition, which is by far, the best position of the team.
+          </p>
+        </div>
+
+        <div class="quote" >
+          <img src="achievements/assets/images/sae.jpg" class="sae" />
+          <img src="achievements/assets/images/7.PNG" class="rank1" />
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2017</h1>
+          <h6>Lakeland, Florida, USA/6-8th March, 2017</h6>
+          <p>
+            Jetaayu has a wingspan of 3.2m and weighs 16 pounds. It has the capability of carrying 5 pounds of static payload and 2
+            pounds of dynamic payload. With the help of efficient DAS (Data Acquisition System) and the installation of necessary
+            sensors, the aircraft can be modified for weather analysis and thermal imaging. In the 2017 SAE EAST aero design
+            competition Jetaayu secured an overall world ranking of 7. It also helped the team secure an overall 3rd ranking in the
+            Indian Space Conclave 2017 competition held by SEDS VIT.
+          </p>
+        </div>
+
+        <div class="quote" >
+          <img src="achievements/assets/images/seds.png" class="seds" />
+          <img src="achievements/assets/images/3.PNG" class="rank" />
+          <h1>INDIAN SPACE CONCLAVE-SEDS VIT 2017</h1>
+          <h6>VIT Vellore/5-6th August, 2017</h6>
+          <p>
+            Indian Space Conclave was organised by SEDS VIT on 5th and 6th
+            August, 2017. All the Aero Design teams of VIT University, Creation
+            Labs, ASME and some professional organisations displayed their
+            respective models and works. The team displayed their advance class
+            aircraft ‘Jetaayu’. The aircraft remained the centre of attraction
+            of the event and received huge crowd to witness its beauty.
+            Faculties from different schools and other universities visited our
+            stall and interacted with us.
+          </p>
+        </div>
+
+        <div class="quote" >
+          <img src="achievements/assets/images/bits.png" class="bits" />
+          <img src="achievements/assets/images/7.PNG" class="rank1" />
+          <h1>ATMOS BITS-PILANI TECH EXPO 2017</h1>
+          <h6>BITS Pilani, Hyderabad/28-29th October, 2017</h6>
+          <p>
+            ATMOS is an event organised by BITS Pilani every year during their
+            Tech Expo. Teams and individuals from universities like NITs, DTU,
+            IITs, IISc, SRM and BITS participated and displayed their models and
+            ideas. Jetaayu, the advance class aircraft of the team, witnessed
+            overwhelming response from other teams and visitors. Officials from
+            companies like Mytrah energy appraised the model. Other
+            distinguished visitors included official from IITs, DRDO and ISRO.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

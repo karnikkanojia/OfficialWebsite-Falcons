@@ -1,0 +1,205 @@
+.body {
+  background-color: #fbf7f2;
+  overflow-x: hidden;
+}
+
+/*navbar*/
+#title {
+  background-color: #ffffff;
+  z-index: 1000;
+}
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-brand {
+  width: 40%;
+}
+.nav-item {
+  padding: 0 20px;
+}
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#falcon-logo {
+  height: 2rem;
+  width: auto;
+  margin: 0 auto;
+}
+
+#menuToggle {
+  display: none;
+  color: #000;
+}
+
+/*Flagships*/
+
+.flagships {
+  margin-top: 70px !important;
+  /* margin-left: 0% !important;
+  margin-right: 0% !important; */
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.flagship-image {
+  width: 100%;
+  height: 95vh;
+}
+
+.content {
+  margin-top: 4% !important;
+}
+
+.flagship-heading {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  /* font-weight: 900;
+  font-size: 72px;
+  line-height: 92px; */
+  font-size: 48px;
+  font-weight: bolder;
+  color: #000000;
+  padding: 10% 8% 5%;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.flagship-content {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: justify !important;
+  /* or 142% */
+  font-weight: 300;
+}
+
+.flagship-row:nth-child(odd) .flagship-heading {
+  justify-content: end;
+  padding-right: 10%;
+}
+
+.flagship-content-left {
+  text-align: right;
+  margin: 0 !important;
+  padding-right: 8%;
+  padding-left: 4%;
+  /* justify-content: end !important; */
+}
+
+.flagship-content-right {
+  text-align: left;
+  padding-left: 8%;
+  padding-right: 4%;
+  margin-right: 0% !important;
+}
+
+@media (min-width: 720px) {
+  .container {
+    max-width: 98.5vw !important;
+  }
+
+  .flagships {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .flagship-image {
+    height: 100%;
+  }
+
+  .flagship-content {
+    font-size: 20px;
+  }
+  #falcon-logo {
+    height: 1.5rem;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #title {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  #falcon-logo {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .flagship-content-left {
+    text-align: center;
+  }
+
+  .flagship-content-right {
+    text-align: center;
+  }
+
+  .flagship-image {
+    align-content: center !important;
+    height: 80vw;
+    width: 80vw;
+    align-content: center;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .flagship-heading {
+    justify-content: center !important;
+  }
+
+  /* .flagship-row:nth-child(odds) .flagship-heading {
+    justify-content: center !important;
+  } */
+
+  .order-content {
+    order: 1;
+  }
+  .order-image {
+    order: 2;
+  }
+  .flagships {
+    padding-left: 1%;
+  }
+
+  .flagship-content {
+    line-height: 30px;
+  }
+
+  .flagship-heading {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  .flagship-content {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 !important;
+  }
+
+  .image {
+    justify-content: center !important;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+}

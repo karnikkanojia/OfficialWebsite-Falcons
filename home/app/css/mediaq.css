@@ -1,0 +1,541 @@
+/* tablet */
+@media (max-width: 1199.98px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  #vulcan-text-large {
+    display: none;
+  }
+
+  #airavat-text-large {
+    display: none;
+  }
+  .buttons {
+    font-family: "Biryani", "sans-serif";
+    font-weight: 600;
+    padding: 0.625rem 10px;
+    padding-top: min(0.875rem, 34px);
+    font-size: 0.875rem;
+    width: max(10rem, 23%);
+    height: 8%;
+  }
+
+  .d-flex {
+    width: 30%;
+  }
+  .work {
+    display: none;
+  }
+}
+
+/* between tablets and large phones */
+@media (max-width: 948.5px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .faclons-logo img {
+    width: 20%;
+    height: auto;
+  }
+
+  .designed-by-text {
+    width: 68%;
+    margin-bottom: 20px;
+  }
+
+  .d-flex {
+    width: 30%;
+  }
+
+  .achievements {
+    height: 120vh;
+  }
+
+  #footer {
+    padding: 0 2rem;
+  }
+
+  .team-info {
+    position: relative;
+    top: auto;
+    height: 50%;
+  }
+
+  #founded-in,
+  #planes-built,
+  #world-rank,
+  #asia-rank {
+    width: 74%;
+  }
+
+  .info-wrapper h5 {
+    font-size: clamp(17px, 50%, 40px);
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact {
+    height: 190vh;
+  }
+
+  .maps-link {
+    padding: 0;
+  }
+
+  #about-us-content,
+  #our-mission-content {
+    padding: 4% clamp(1rem, 9%, 2rem);
+  }
+
+  #our-mission-content > .title {
+    left: 25%;
+    top: 22%;
+  }
+
+  .info-wrapper {
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .header-links {
+    width: 65%;
+  }
+
+  .header-logo {
+    width: 35%;
+  }
+
+  #founded-in,
+  #planes-built,
+  #world-rank,
+  #asia-rank {
+    display: flex;
+    width: 9rem;
+    height: 190px;
+  }
+  .work {
+    display: none;
+  }
+
+  .arrow-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+  }
+
+  .buttons {
+    font-family: "Biryani", "sans-serif";
+    font-weight: 600;
+    padding: min(0.875rem, 34px) 0 0.625rem 0;
+    font-size: 0.875rem;
+    width: max(10rem, 23%);
+    height: 10%;
+  }
+  .bg-front-vulcan {
+    background: url(../../assets/vulcan_achievements.png) no-repeat center
+      bottom 40%;
+    background-size: 125%;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+  }
+}
+
+/* mid-width device */
+@media (max-width: 767.98px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .faclons-logo img {
+    width: 20%;
+    height: auto;
+  }
+
+  .designed-by-text {
+    width: 68%;
+    margin-bottom: 20px;
+  }
+  .arrow-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+  }
+  .sponsors-section {
+    height: fit-content;
+  }
+  .vulcancontainer {
+    padding-left: 2%;
+    height: 100%;
+    width: 100%;
+    background: url(../../assets/vulcan_mobile.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .text-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    padding: 100px 20px;
+    margin-top: -170px;
+  }
+
+  .text-landing > .title {
+    font-size: clamp(2.375rem, 5vw, 3.4rem);
+  }
+
+  .buttons {
+    font-family: "Biryani", "sans-serif";
+    font-weight: 600;
+    padding: min(0.875rem, 34px) 0 0.625rem 0;
+    font-size: 0.875rem;
+    width: max(10rem, 23%);
+    height: 10%;
+  }
+  .department-heading > div:nth-child(1) {
+    position: relative;
+    bottom: auto;
+  }
+
+  .department-heading {
+    margin-top: 37px;
+  }
+
+  .contact-wrapper {
+    height: fit-content;
+  }
+
+  .maps-link {
+    padding: 20px;
+  }
+
+  #map-med {
+    display: none;
+  }
+
+  #map-small {
+    display: block;
+  }
+
+  .about-us-para,
+  .our-mission-para {
+    margin-top: 2rem;
+  }
+
+  .contact {
+    height: fit-content;
+  }
+
+  .form-wrapper {
+    margin-top: 70px;
+  }
+
+  .text-landing > p {
+    width: 140%;
+    font-size: 15px;
+  }
+
+  .about-us,
+  .our-mission {
+    background-color: #fbf7f2;
+  }
+
+  #team-intro-seperator {
+    display: block;
+  }
+
+  #about-us-content,
+  #our-mission-content {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #about-us-content,
+  #our-mission-content {
+    justify-content: flex-start;
+  }
+
+  #about-us-content > .title,
+  #our-mission-content > .title {
+    position: relative;
+  }
+
+  #about-us-heading {
+    top: auto !important;
+    left: auto !important;
+    margin-top: 22px;
+    margin: 40px;
+  }
+
+  #vulcantail {
+    height: 58%;
+    width: 100%;
+  }
+
+  .about-us-para,
+  .our-mission-para {
+    width: fit-content;
+    text-align: center;
+  }
+
+  .about-us-para {
+    margin: auto;
+    margin-top: clamp(1px, 13%, 8px);
+  }
+
+  .our-mission-para {
+    margin: 0;
+  }
+
+  #our-mission-content {
+    justify-content: space-between;
+  }
+
+  #our-mission-content > .title {
+    left: 44%;
+    top: 22%;
+    width: 9.3125rem;
+  }
+
+  #our-mission-heading {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: fit-content !important;
+
+    margin-top: 3.75rem;
+  }
+
+  .department-heading > div:nth-child(1) {
+    position: relative;
+    bottom: auto;
+  }
+
+  .department-heading {
+    margin-top: 37px;
+  }
+
+  .options {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .departments .options {
+    justify-items: space-between;
+  }
+
+  div.option:nth-child(2) {
+    height: 52px;
+  }
+
+  #footer {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .d-flex {
+    margin: 15px;
+  }
+
+  .copyright-text {
+    margin-top: 12px;
+  }
+
+  .designed-by-text {
+    margin-bottom: 10px;
+  }
+
+  .tc-pagination {
+    margin-left: 36%;
+  }
+
+  .header-links {
+    display: none;
+  }
+  .work {
+    display: none;
+  }
+
+  #sponsors-wide {
+    display: none;
+  }
+
+  .bg-front-vulcan {
+    background: url(../../assets/vulcan_achievements.png) no-repeat center
+      bottom 40%;
+    background-size: 125%;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+  }
+  #our-mission-heading {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 50px 0 0 0;
+  }
+  #about-us-heading {
+    text-align: center;
+  }
+}
+
+/* small-devices */
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .landing {
+    height: 93vh;
+  }
+
+  .faclons-logo img {
+    width: 20%;
+    height: auto;
+  }
+
+  .designed-by-text {
+    width: 68%;
+    margin-bottom: 20px;
+  }
+
+  .d-flex {
+    width: 70%;
+  }
+  .work {
+    display: none;
+  }
+  .arrow-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+  }
+
+  .sponsors-1,
+  .sponsors-2,
+  .sponsors-3,
+  .sponsors-4 {
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .sponsors-1 > img {
+    max-width: 42%;
+  }
+
+  .sponsors-2 > img {
+    max-width: 34%;
+    scale: 0.8;
+  }
+
+  .sponsors-3 > img {
+    max-width: 39%;
+    margin-top: 20px;
+  }
+
+  .sponsors-4 > img {
+    max-width: 35%;
+    margin: 9px;
+  }
+
+  .sponsors-1 > img:nth-child(3) {
+    margin: auto;
+    margin-top: 27px;
+  }
+
+  .sponsors-3 > img:nth-child(5) {
+    margin: auto;
+    margin-top: 24px;
+  }
+
+  .sponsors-4 > img:nth-child(5) {
+    margin: auto;
+    margin-top: 23px;
+  }
+
+  .sponsors-section {
+    grid-gap: 50px;
+  }
+
+  .buttons {
+    font-family: "Biryani", "sans-serif";
+    font-weight: 600;
+    padding: 0.625rem 0;
+    padding-top: min(0.875rem, 34px);
+    font-size: 0.875rem;
+    width: max(10rem, 23%);
+    height: 10%;
+  }
+
+  .bg-front-vulcan {
+    background: url(../../assets/vulcan_achievements.png) no-repeat center
+      bottom 40%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+  }
+}
+
+@media (min-height: 1024px) and (min-width: 768px) and (max-width: 1024px) and (max-width: 1366px) {
+  .about-us {
+    height: 64vh;
+  }
+
+  .our-mission {
+    height: 60vh;
+  }
+
+  .contact {
+    height: 120vh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 655px) and (min-width: 767.98px) {
+  .contact {
+    height: 210vh;
+  }
+
+  #our-mission-content > .title {
+    left: 25%;
+    top: 16%;
+  }
+
+  #about-us-heading {
+    right: 27%;
+  }
+
+  .about-us-para,
+  .our-mission-para {
+    padding: 0px 2rem;
+  }
+
+  .wrapper {
+    height: 150vh;
+  }
+
+  .achievements {
+    height: 200vh;
+  }
+
+  .contact {
+    height: 303vh;
+  }
+
+  #footer {
+    height: 70px;
+  }
+
+  .departments-container {
+    height: fit-content;
+  }
+}

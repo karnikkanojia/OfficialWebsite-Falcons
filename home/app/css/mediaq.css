@@ -301,11 +301,10 @@
 
   .about-us-para {
     margin: auto;
-    margin-top: clamp(1px, 13%, 8px);
   }
 
   .our-mission-para {
-    margin: 0;
+    margin: auto;
   }
 
   #our-mission-content {
@@ -548,5 +547,35 @@
 
   .departments-container {
     height: fit-content;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+  }
+
+  .about-us-para,
+  .our-mission-para {
+    padding: 0px 1rem;
+  }
+
+  #our-mission-heading {
+    padding: 17px 0 0 0;
+  }
+
+  .departments-container {
+    height: 132vh;
+   }
+
+   .sponsors-mobile-9 {
+    width: 108%;
+  }
+
+  /* altair logo */
+  .sponsors-mobile-9 > img:nth-child(1) {
+    width: 40%;
   }
 }

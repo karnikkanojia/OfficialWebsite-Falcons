@@ -822,11 +822,6 @@ section {
   height: 50%;
 }
 
-.sponsors-mobile-9 > img:nth-child(1) {
-  height: 47px;
-  margin-left: -10%;
-}
-
 .sponsors-mobile-1,
 .sponsors-mobile-2,
 .sponsors-mobile-3,
@@ -840,21 +835,22 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  padding: 0 90px;
+  padding: 0 21px;
+
 }
 
-.sponsors-mobile-1 > img,
-.sponsors-mobile-2 > img,
-.sponsors-mobile-3 > img,
-.sponsors-mobile-4 > img,
-.sponsors-mobile-5 > img,
-.sponsors-mobile-6 > img,
-.sponsors-mobile-7 > img,
-.sponsors-mobile-8 > img,
-.sponsors-mobile-9 > img {
-  height: auto;
+/* Element | http://127.0.0.1:5500/ */
+
+.sponsors-mobile-2 > img:nth-child(1) {
   width: 42%;
 }
+
+/* Element | http://127.0.0.1:5500/ */
+
+.sponsors-mobile-5 > img:nth-child(1) {
+  width: 43%;
+}
+
 
 #sponsors-phone > div:nth-child(1) {
   text-align: center;
@@ -862,30 +858,23 @@ section {
 
 /* xoar logo */
 .sponsors-mobile-4 > img:nth-child(2) {
-  width: 26%;
+  width: 20%;
+  margin: 0 8%;
 }
 
-/* altair logo */
-.sponsors-mobile-9 {
-  align-items: center;
-  width: 140%;
-  margin-left: 41px;
-}
-
-.sponsors-mobile-4 > img:nth-child(2) {
-  width: 26%;
-}
-
+/* bhor */
 .sponsors-mobile-7 > img:nth-child(1) {
   width: 32%;
 }
 
+/* ansys */
 .sponsors-mobile-6 > img:nth-child(1) {
   width: 36%;
 }
 
+/* nxp logo */
 .sponsors-mobile-2 > img:nth-child(2) {
-  width: 36%;
+  width: 27%;
 }
 
 .faclons-logo img {
@@ -1001,7 +990,6 @@ section {
 
 .sponsors-mobile-9 {
   width: 100%;
-  margin-left: -16px;
 }
 
 .sponsors-mobile-1 > img,
@@ -1013,25 +1001,14 @@ section {
 .sponsors-mobile-7 > img,
 .sponsors-mobile-8 > img,
 .sponsors-mobile-9 > img {
-  width: 43%;
-}
-
-.sponsors-mobile-1,
-.sponsors-mobile-2,
-.sponsors-mobile-3,
-.sponsors-mobile-4,
-.sponsors-mobile-5,
-.sponsors-mobile-6,
-.sponsors-mobile-7,
-.sponsors-mobile-8,
-.sponsors-mobile-9 {
-  padding: 0;
+  height: auto;
+  width: 34%;
 }
 
 .sponsors-mobile-9 > img:nth-child(1) {
   width: 156px;
   height: auto;
-  margin-left: 26%;
+  margin: 0 auto;
 }
 
 .facebook,

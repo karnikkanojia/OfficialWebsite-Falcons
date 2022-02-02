@@ -115,8 +115,7 @@
 
   .arrow-wrapper {
     position: absolute;
-    top: 90%;
-    left: 45%;
+    top: 90%
   }
 
   .buttons {
@@ -247,8 +246,8 @@
     height: 50%;
     padding: 0 7%;
     margin: auto 0;
-   }
-   
+  }
+
   .contact {
     height: fit-content;
   }
@@ -309,8 +308,7 @@
   .about-us-para {
     padding: 0 6%;
     margin: 0 auto;
-   }
-   
+  }
 
   .our-mission-para {
     margin: 0;
@@ -433,10 +431,12 @@
   .work {
     display: none;
   }
+
   .arrow-wrapper {
     position: absolute;
     top: 90%;
-    left: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .sponsors-1,

@@ -31,6 +31,7 @@ body {
   background-color: #ffffff;
   z-index: 1000;
   padding: 0;
+  width: 100vw;
 }
 
 #vulcantailupper2 {
@@ -256,6 +257,8 @@ body {
 
 .team-intro {
   position: relative;
+  width: 100vw;
+  background-color: white;
 }
 
 #about-us-heading {
@@ -659,7 +662,7 @@ section {
   size: 10%;
 }
 .listing-carousel-button.listing-carousel-button-prev {
-  left: -30px;
+  left: -15px;
   padding-left: 50px;
   border-radius: 0 60px 60px 0;
 }
@@ -744,8 +747,8 @@ section {
   z-index: 20;
 }
 .testi-avatar img {
-  width: 80px;
-  height: 80px;
+  width: 105px;
+  height: 105px;
   float: left;
   border-radius: 100%;
   border: 6px solid #fff;
@@ -811,6 +814,7 @@ section {
     background-color: white;
     color: black;
     text-align: center;
+    width: 100vw;
   }
   #falcon-logo {
     height: 2rem;
@@ -820,6 +824,11 @@ section {
 
 .testimonials-carousel-wrap {
   height: 50%;
+}
+
+.sponsors-mobile-9 > img:nth-child(1) {
+  height: 47px;
+  margin-left: -10%;
 }
 
 .sponsors-mobile-1,
@@ -835,22 +844,21 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  padding: 0 21px;
-
+  padding: 0 90px;
 }
 
-/* Element | http://127.0.0.1:5500/ */
-
-.sponsors-mobile-2 > img:nth-child(1) {
+.sponsors-mobile-1 > img,
+.sponsors-mobile-2 > img,
+.sponsors-mobile-3 > img,
+.sponsors-mobile-4 > img,
+.sponsors-mobile-5 > img,
+.sponsors-mobile-6 > img,
+.sponsors-mobile-7 > img,
+.sponsors-mobile-8 > img,
+.sponsors-mobile-9 > img {
+  height: auto;
   width: 42%;
 }
-
-/* Element | http://127.0.0.1:5500/ */
-
-.sponsors-mobile-5 > img:nth-child(1) {
-  width: 43%;
-}
-
 
 #sponsors-phone > div:nth-child(1) {
   text-align: center;
@@ -858,23 +866,30 @@ section {
 
 /* xoar logo */
 .sponsors-mobile-4 > img:nth-child(2) {
-  width: 20%;
-  margin: 0 8%;
+  width: 26%;
 }
 
-/* bhor */
+/* altair logo */
+.sponsors-mobile-9 {
+  align-items: center;
+  width: 140%;
+  margin-left: 41px;
+}
+
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 26%;
+}
+
 .sponsors-mobile-7 > img:nth-child(1) {
   width: 32%;
 }
 
-/* ansys */
 .sponsors-mobile-6 > img:nth-child(1) {
   width: 36%;
 }
 
-/* nxp logo */
 .sponsors-mobile-2 > img:nth-child(2) {
-  width: 27%;
+  width: 36%;
 }
 
 .faclons-logo img {
@@ -978,6 +993,8 @@ section {
 
 .testimonials {
   height: 100vh;
+  background-color: white;
+  width: 100vw;
 }
 
 #testimonial-heading {
@@ -986,10 +1003,13 @@ section {
 
 .team-intro {
   overflow-x: hidden;
+  width: 100vw;
+  background-color: white;
 }
 
 .sponsors-mobile-9 {
   width: 100%;
+  margin-left: -16px;
 }
 
 .sponsors-mobile-1 > img,
@@ -1001,20 +1021,63 @@ section {
 .sponsors-mobile-7 > img,
 .sponsors-mobile-8 > img,
 .sponsors-mobile-9 > img {
-  height: auto;
-  width: 34%;
+  width: 43%;
+}
+
+.sponsors-mobile-1,
+.sponsors-mobile-2,
+.sponsors-mobile-3,
+.sponsors-mobile-4,
+.sponsors-mobile-5,
+.sponsors-mobile-6,
+.sponsors-mobile-7,
+.sponsors-mobile-8,
+.sponsors-mobile-9 {
+  padding: 0;
 }
 
 .sponsors-mobile-9 > img:nth-child(1) {
   width: 156px;
   height: auto;
-  margin: 0 auto;
+  margin-left: 26%;
 }
 
 .facebook,
 .twitter,
 .linkedin,
 .instagram {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot.owl-nav {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  background-color: #dab783;
+  display: block;
+  padding: 0 0.3em !important;
+  font-size: 10em;
+  margin: 0;
+  cursor: pointer;
+  color: #dab783;
+  transform: translate(-50%, -50%);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot.owl-nav {
+  position: absolute;
+  right: -23px;
+  top: 50%;
+  background-color: #dab783;
+  display: block;
+  padding: 0 0.3em !important;
+  font-size: 10em;
+  margin: 0;
+  cursor: pointer;
+  color: #dab783;
+  transform: translate(-50%, -50%);
 }

@@ -7,9 +7,10 @@ jQuery(document).ready(function($) {
                 items: 3,
                 margin: 0,
                 autoplay: true,
-                dots:true,
+                dots:false,
                 autoplayTimeout: 8500,
                 smartSpeed: 200,
+                nav: true,
                 responsive: {
                   0: {
                     items: 1

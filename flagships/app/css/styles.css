@@ -101,6 +101,11 @@
   margin-right: 0% !important;
 }
 
+.flagship-heading {
+  font-size: 36px;
+  padding: 17% 8% 5%;
+}
+
 @media (min-width: 720px) {
   .container {
     max-width: 98.5vw !important;
@@ -198,15 +203,14 @@
   .footer {
     padding: 20px;
   }
+
+  .flagship-heading {
+    padding: 4% 8% 5%;
+  }
 }
 
 .flaships {
   margin-top: 59px;
-}
-
-.flagship-heading {
-  font-size: 36px;
-  padding: 17% 8% 5%;
 }
 
 .flagship-content {

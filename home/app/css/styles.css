@@ -864,11 +864,6 @@ section {
   text-align: center;
 }
 
-/* xoar logo */
-.sponsors-mobile-4 > img:nth-child(2) {
-  width: 26%;
-}
-
 /* altair logo */
 .sponsors-mobile-9 {
   align-items: center;
@@ -876,20 +871,14 @@ section {
   margin-left: 41px;
 }
 
-.sponsors-mobile-4 > img:nth-child(2) {
-  width: 26%;
-}
-
+/* bhor logo */
 .sponsors-mobile-7 > img:nth-child(1) {
-  width: 32%;
+  width: 23%;
 }
 
-.sponsors-mobile-6 > img:nth-child(1) {
-  width: 36%;
-}
-
-.sponsors-mobile-2 > img:nth-child(2) {
-  width: 36%;
+/* solidworks logo */
+.sponsors-mobile-5 > img:nth-child(1) {
+  width: 34%;
 }
 
 .faclons-logo img {
@@ -1021,7 +1010,7 @@ section {
 .sponsors-mobile-7 > img,
 .sponsors-mobile-8 > img,
 .sponsors-mobile-9 > img {
-  width: 43%;
+  width: 28%;
 }
 
 .sponsors-mobile-1,
@@ -1036,10 +1025,16 @@ section {
   padding: 0;
 }
 
+/* xoar logo */
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 17%;
+  margin-right: 6%;
+}
+
 .sponsors-mobile-9 > img:nth-child(1) {
   width: 156px;
   height: auto;
-  margin-left: 26%;
+  margin: 0 auto;
 }
 
 .facebook,

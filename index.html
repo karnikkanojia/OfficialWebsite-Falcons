@@ -84,7 +84,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <title>Assailing Falcons</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-04C6SSEMBZ"></script>
@@ -97,7 +104,6 @@
 </script>
   </head>
   <body>
-
     <div class="landing">
       <div class="wrapper super-center">
         <div class="vulcancontainer">
@@ -248,27 +254,30 @@
             International. The team brings together engineers from a variety of
             backgrounds that are involved in aircraft design and manufacturing,
             providing them with professional expertise and hands-on knowledge.
-            The team's goal is to allow students to better themselves and hone
-            their skills by embarking on a journey of learning, technical
-            experience and achievement.
+            The team's goal is to allow students to better themselves and hone their skills by embarking on a journey of
+            learning,
+            technical experience and achievement.
           </div>
         </div>
       </div>
+      <div class="seperator" id="team-intro-seperator"></div>
       <div class="our-mission wrapper">
         <div class="content-wrapper" id="our-mission-content">
-          <div id="vulcantailupper2" loading="lazy" data-aos="fade-right"></div>
-          <div class="our-mission-para h-40" data-aos="fade-left">
+          <div class="our-mission-para" data-aos="fade-left">
             <h1 class="title" id="our-mission-heading">
+<<<<<<< HEAD
               <!--OUR MISSION-->
+=======
+              <!--OUR
+                                      MISSION-->
+>>>>>>> c755eb28f3cc4c20fa9a0275b8087a186869ca81
             </h1>
-            <p>
-              As a team, we aim to grab the highest laurels for the country and
-              construct aerodynamically efficient aircrafts. We tend not only to
-              achieve our mission statement of the competition but also learn
-              and gather deep knowledge about avionics and aeronautics for
-              further field development.We work with utmost passion and focus to
-              manifest airplanes which are capable of more than competitions.
-            </p>
+            As a team, we aim to grab the highest laurels for the country and
+            construct aerodynamically efficient aircrafts. We tend not only to
+            achieve our mission statement of the competition but also learn and
+            gather deep knowledge about avionics and aeronautics for further
+            field development.We work with utmost passion and focus to manifest airplanes which are capable of more than
+            competitions.
           </div>
           <div id="vulcantailupper" loading="lazy" data-aos="fade-right"></div>
         </div>
@@ -759,6 +768,8 @@
         <div class="row">
           <div class="col-sm-12">
             <div id="customers-testimonials" class="owl-carousel">
+    
+              
               <div class="item">
                 <div class="shadow-effect">
                   <img class="img-circle" src="home/assets/sree.jpeg" alt="">
@@ -986,6 +997,11 @@
     </div>
   </body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
   <script src="home/app/js/dept.js"></script>
   <script src="home/app/js/app.js"></script>
   <script src="home/app/js/navbar.js"></script>
@@ -994,6 +1010,12 @@
     AOS.init({
       once: true,
       duration: 500,
+    });
+  </script>
+  <script>
+    $(".option").click(function () {
+      $(".option").removeClass("active");
+      $(this).addClass("active");
     });
   </script>
 </html>

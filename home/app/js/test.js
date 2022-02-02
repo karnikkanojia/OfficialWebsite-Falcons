@@ -7,14 +7,9 @@ jQuery(document).ready(function($) {
                 items: 3,
                 margin: 0,
                 autoplay: true,
-                dots:false,
+                dots:true,
                 autoplayTimeout: 8500,
                 smartSpeed: 200,
-              nav: true,
-                navText: [
-        '<i class="fa fa-angle-left" id="fa" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" id="fa" aria-hidden="true"></i>'
-    ],
                 responsive: {
                   0: {
                     items: 1

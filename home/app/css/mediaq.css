@@ -3,7 +3,13 @@
   body {
     overflow-x: hidden !important;
   }
+  #vulcan-text-large {
+    display: none;
+  }
 
+  #airavat-text-large {
+    display: none;
+  }
   .buttons {
     font-family: "Biryani", "sans-serif";
     font-weight: 600;
@@ -143,25 +149,6 @@
     overflow-x: hidden !important;
   }
 
-  #vulcantailupper2 {
-    display: block;
-    background: url(../../assets/vulcantailupper1.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 30rem;
-    width: 35rem;
-  }
-
-  .our-mission-para {
-    height: 45%;
-  }
-
-  #vulcantailupper {
-    display: none;
-  }
-
   .faclons-logo img {
     width: 20%;
     height: auto;
@@ -285,7 +272,12 @@
   #about-us-heading {
     top: auto !important;
     left: auto !important;
+<<<<<<< HEAD
     margin: 20px 40px;
+=======
+    margin-top: 22px;
+    margin: 40px;
+>>>>>>> c755eb28f3cc4c20fa9a0275b8087a186869ca81
   }
 
   #vulcantail {
@@ -301,6 +293,7 @@
 
   .about-us-para {
     margin: auto;
+    margin-top: clamp(1px, 13%, 8px);
   }
 
   .our-mission-para {
@@ -383,7 +376,7 @@
   .bg-front-vulcan {
     background: url(../../assets/vulcan_achievements.png) no-repeat center
       bottom 40%;
-    background-size: cover;
+    background-size: 125%;
     width: 100%;
     height: 100vh;
     margin-top: 0%;
@@ -493,6 +486,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin-top: 10%;
   }
 }
 

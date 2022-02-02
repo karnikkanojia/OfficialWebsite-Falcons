@@ -33,13 +33,17 @@
   margin: 0 auto;
 }
 
-.cover-img {
-  object-fit: cover;
+#menuToggle {
+  display: none;
+  color: #000;
 }
 
 /*Flagships*/
+
 .flagships {
-  margin-top: 8vh !important;
+  margin-top: 70px !important;
+  /* margin-left: 0% !important;
+  margin-right: 0% !important; */
 }
 
 .nopadding {
@@ -74,7 +78,7 @@
 .flagship-content {
   font-family: Montserrat;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 48px;
   text-align: justify !important;
   /* or 142% */
@@ -155,7 +159,7 @@
   .flagship-image {
     align-content: center !important;
     height: 80vw;
-    width: 100vw;
+    width: 80vw;
     align-content: center;
     justify-content: center;
     padding-top: 25px;
@@ -208,6 +212,7 @@
     padding: 4% 8% 5%;
   }
 }
+<<<<<<< HEAD
 
 .flaships {
   margin-top: 59px;
@@ -216,3 +221,5 @@
 .flagship-content {
   font-size: 20px;
 }
+=======
+>>>>>>> c755eb28f3cc4c20fa9a0275b8087a186869ca81

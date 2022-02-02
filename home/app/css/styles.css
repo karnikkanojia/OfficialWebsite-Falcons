@@ -31,6 +31,11 @@ body {
   background-color: #ffffff;
   z-index: 1000;
   padding: 0;
+  width: 100vw;
+}
+
+#vulcantailupper2 {
+  display: none;
 }
 
 .navbar-brand {
@@ -50,11 +55,6 @@ body {
   height: 2rem;
   width: auto;
   margin: 0 auto;
-}
-
-#menuToggle {
-  display: none;
-  color: #000;
 }
 
 .super-center {
@@ -134,7 +134,7 @@ body {
   padding-left: 2%;
   height: 100%;
   width: 100%;
-  background: url(../../assets/vulcan_laptop.png) no-repeat center top;
+  background: url(../../assets/vulcan_laptop_1.png) no-repeat center top 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,19 +243,22 @@ body {
 
 @media (min-width: 1200px) {
   .work {
-    margin-right: 3%;
-    float: right;
-    position: relative;
-    margin-top: -37%;
-    height: 40%;
+    position: absolute;
+    z-index: 10;
+    right: 2%;
+    height: fit-content;
+    top: 28%;
   }
+
   .links {
-    padding-top: 170%;
+    padding-top: 160%;
   }
 }
 
 .team-intro {
   position: relative;
+  width: 100vw;
+  background-color: white;
 }
 
 #about-us-heading {
@@ -659,7 +662,7 @@ section {
   size: 10%;
 }
 .listing-carousel-button.listing-carousel-button-prev {
-  left: -30px;
+  left: -15px;
   padding-left: 50px;
   border-radius: 0 60px 60px 0;
 }
@@ -744,8 +747,8 @@ section {
   z-index: 20;
 }
 .testi-avatar img {
-  width: 80px;
-  height: 80px;
+  width: 105px;
+  height: 105px;
   float: left;
   border-radius: 100%;
   border: 6px solid #fff;
@@ -811,6 +814,7 @@ section {
     background-color: white;
     color: black;
     text-align: center;
+    width: 100vw;
   }
   #falcon-logo {
     height: 2rem;
@@ -860,6 +864,11 @@ section {
   text-align: center;
 }
 
+/* xoar logo */
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 26%;
+}
+
 /* altair logo */
 .sponsors-mobile-9 {
   align-items: center;
@@ -867,14 +876,20 @@ section {
   margin-left: 41px;
 }
 
-/* bhor logo */
-.sponsors-mobile-7 > img:nth-child(1) {
-  width: 23%;
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 26%;
 }
 
-/* solidworks logo */
-.sponsors-mobile-5 > img:nth-child(1) {
-  width: 34%;
+.sponsors-mobile-7 > img:nth-child(1) {
+  width: 32%;
+}
+
+.sponsors-mobile-6 > img:nth-child(1) {
+  width: 36%;
+}
+
+.sponsors-mobile-2 > img:nth-child(2) {
+  width: 36%;
 }
 
 .faclons-logo img {
@@ -978,6 +993,8 @@ section {
 
 .testimonials {
   height: 100vh;
+  background-color: white;
+  width: 100vw;
 }
 
 #testimonial-heading {
@@ -986,6 +1003,8 @@ section {
 
 .team-intro {
   overflow-x: hidden;
+  width: 100vw;
+  background-color: white;
 }
 
 .sponsors-mobile-9 {
@@ -1002,7 +1021,7 @@ section {
 .sponsors-mobile-7 > img,
 .sponsors-mobile-8 > img,
 .sponsors-mobile-9 > img {
-  width: 28%;
+  width: 43%;
 }
 
 .sponsors-mobile-1,
@@ -1017,23 +1036,16 @@ section {
   padding: 0;
 }
 
-/* xoar logo */
-.sponsors-mobile-4 > img:nth-child(2) {
-  width: 17%;
-  margin-right: 6%;
-}
-
 .sponsors-mobile-9 > img:nth-child(1) {
   width: 156px;
   height: auto;
-  margin: 0 auto;
+  margin-left: 26%;
 }
 
 .facebook,
 .twitter,
 .linkedin,
 .instagram {
-<<<<<<< HEAD
   width: 30px;
   height: 30px;
 }
@@ -1068,8 +1080,24 @@ section {
   cursor: pointer;
   color: #dab783;
   transform: translate(-50%, -50%);
-=======
-  width: 25px;
-  height: 25px;
->>>>>>> c755eb28f3cc4c20fa9a0275b8087a186869ca81
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+
+#fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: xxx-large;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: -170%;
 }

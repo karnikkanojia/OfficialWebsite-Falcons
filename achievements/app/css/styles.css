@@ -1,3 +1,190 @@
+body {
+  background-color: #fbf7f2;
+  overflow-x: hidden;
+}
+
+.vulcan-container {
+  background: url("../../assets/images/vulcan_model.png") no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.col {
+  text-align: center;
+  background: #fbf7f2;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 70px;
+  height: 70px;
+}
+.container {
+  overflow-x: hidden;
+}
+
+.container3 {
+  padding: 3rem;
+  display: grid;
+  grid-gap: 2em;
+  background-color: #fbf7f2;
+}
+
+.container2 {
+  padding: 3em;
+  display: grid;
+  display: grid;
+  grid-gap: 2em;
+  background-color: #fbf7f2;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+.quote {
+  /* padding: 2em; */
+
+  border-radius: 0.3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 1);
+  padding: 5px 32px 10px 32px;
+  background: #ffffff;
+  box-sizing: border-box;
+  /* basic shadow */
+  box-shadow: 0px 7px 14px #d3dae2;
+  border-radius: 25px;
+}
+
+p {
+  margin-top: 0;
+  font-family: "Biryani", sans-serif;
+}
+
+h6 {
+  font-family: "Biryani", sans-serif;
+  font-style: normal;
+  font-weight: revert;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  letter-spacing: 0.14px;
+  color: #534d4d;
+}
+
+.sae {
+  width: 100px;
+}
+
+.seds {
+  width: 150px;
+  padding-top: 20px;
+}
+.bits {
+  width: 60px;
+  padding-top: 10px;
+}
+.rank {
+  width: 70px;
+  float: right;
+  padding-top: 15px;
+  width: 75px;
+  height: 80px;
+}
+.rank1 {
+  width: 70px;
+  float: right;
+  padding-top: 15px;
+  width: 90px;
+  height: 90px;
+}
+
+@media (max-width: 1200px) {
+  .container3 {
+    padding: 3rem;
+    display: grid;
+    grid-gap: 2em;
+    background-color: #fbf7f2;
+  }
+}
+@media (min-width: 950px) {
+  .container2 {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fbf7f2;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+
+  .vulcan-container {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 950px) {
+  .container2 {
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #fbf7f2;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+
+  .vulcan-container {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  .vulcan-container {
+    background: url("../../assets/images/vulcan_model_mobile.png") no-repeat
+      center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .container3 {
+    padding: 3rem;
+    display: grid;
+    grid-gap: 2em;
+    background-color: #fbf7f2;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+  #falcon-logo {
+    height: 1.5rem;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #title {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  #falcon-logo {
+    height: 2rem;
+    width: auto;
+  }
+}
+
 #title {
   background-color: #ffffff;
   z-index: 1000;
@@ -22,20 +209,6 @@
   margin: 0 auto;
 }
 
-#menuToggle {
-  display: none;
-  color: #000;
-}
-
-.container img {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  margin-top: 70px;
-  object-fit: cover;
-  object-position: bottom;
-}
-
 *,
 *:before,
 *:after {
@@ -44,10 +217,10 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .scroll-down {
     position: absolute;
-    top: 90%;
+    top: 87%;
     display: block;
     text-align: center;
     font-size: 20px;

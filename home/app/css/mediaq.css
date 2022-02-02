@@ -3,13 +3,7 @@
   body {
     overflow-x: hidden !important;
   }
-  #vulcan-text-large {
-    display: none;
-  }
 
-  #airavat-text-large {
-    display: none;
-  }
   .buttons {
     font-family: "Biryani", "sans-serif";
     font-weight: 600;
@@ -149,6 +143,25 @@
     overflow-x: hidden !important;
   }
 
+  #vulcantailupper2 {
+    display: block;
+    background: url(../../assets/vulcantailupper1.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 30rem;
+    width: 35rem;
+  }
+
+  .our-mission-para {
+    height: 45%;
+  }
+
+  #vulcantailupper {
+    display: none;
+  }
+
   .faclons-logo img {
     width: 20%;
     height: auto;
@@ -272,12 +285,8 @@
   #about-us-heading {
     top: auto !important;
     left: auto !important;
-<<<<<<< HEAD
-    margin: 20px 40px;
-=======
     margin-top: 22px;
     margin: 40px;
->>>>>>> c755eb28f3cc4c20fa9a0275b8087a186869ca81
   }
 
   #vulcantail {
@@ -297,7 +306,7 @@
   }
 
   .our-mission-para {
-    margin: auto;
+    margin: 0;
   }
 
   #our-mission-content {
@@ -376,7 +385,7 @@
   .bg-front-vulcan {
     background: url(../../assets/vulcan_achievements.png) no-repeat center
       bottom 40%;
-    background-size: 125%;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     margin-top: 0%;
@@ -541,35 +550,5 @@
 
   .departments-container {
     height: fit-content;
-  }
-}
-
-@media (max-width: 360px) {
-  .wrapper {
-    width: 100vw;
-    height: 120vh;
-    overflow: hidden;
-  }
-
-  .about-us-para,
-  .our-mission-para {
-    padding: 0px 1rem;
-  }
-
-  #our-mission-heading {
-    padding: 17px 0 0 0;
-  }
-
-  .departments-container {
-    height: 132vh;
-   }
-
-   .sponsors-mobile-9 {
-    width: 108%;
-  }
-
-  /* altair logo */
-  .sponsors-mobile-9 > img:nth-child(1) {
-    width: 40%;
   }
 }

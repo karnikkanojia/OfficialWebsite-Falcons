@@ -43,7 +43,7 @@ const typing = (entries) => {
   entries.forEach((entry) => {
     const ele = entry.target;
     if(entry.isIntersecting){
-      const text = (ele.id === "about-us-heading") ? "ABOUT US" : "OUR\nMISSION";
+      const text = (ele.id === "about-us-heading") ? "ABOUT US" : "OUR MISSION";
       var i=0;
       function loop() {
         if(i<text.length){

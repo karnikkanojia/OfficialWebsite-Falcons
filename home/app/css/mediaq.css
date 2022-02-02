@@ -238,6 +238,11 @@
     display: block;
   }
 
+  .about-us-para,
+  .our-mission-para {
+    margin-top: 2rem;
+  }
+
   .contact {
     height: fit-content;
   }
@@ -281,7 +286,7 @@
     top: auto !important;
     left: auto !important;
     margin-top: 22px;
-    margin: 17px;
+    margin: 40px;
   }
 
   #vulcantail {
@@ -297,6 +302,7 @@
 
   .about-us-para {
     margin: auto;
+    margin-top: clamp(1px, 13%, 8px);
   }
 
   .our-mission-para {
@@ -382,6 +388,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin-top: 0%;
   }
   #our-mission-heading {
     margin: 0 auto;
@@ -397,10 +404,6 @@
 @media (max-width: 575.98px) {
   body {
     overflow-x: hidden !important;
-  }
-
-  .our-mission-para {
-    height: 50% !important;
   }
 
   .landing {
@@ -492,6 +495,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin-top: 10%;
   }
 }
 

@@ -1081,22 +1081,3 @@ section {
   color: #dab783;
   transform: translate(-50%, -50%);
 }
-
-.owl-prev,
-.owl-next {
-  position: absolute;
-  height: 100px;
-  color: inherit;
-  background: none;
-  border: none;
-  z-index: 100;
-}
-
-#fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: xxx-large;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}

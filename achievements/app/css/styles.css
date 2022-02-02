@@ -282,3 +282,11 @@ h6 {
     }
   }
 }
+
+@media (min-width:576px) {
+  .container,
+  .container-sm {
+    max-width: fit-content !important;
+  }
+ }
+ 

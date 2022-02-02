@@ -434,7 +434,7 @@ body {
 }
 
 #sponsor-text {
-  font-size: 1rem;
+  font-size: clamp(1.4rem, 60%, 2rem);
 }
 
 .sponsors-section {
@@ -828,7 +828,6 @@ section {
 
 .sponsors-mobile-9 > img:nth-child(1) {
   height: 47px;
-  margin-left: -10%;
 }
 
 .sponsors-mobile-1,
@@ -864,32 +863,26 @@ section {
   text-align: center;
 }
 
-/* xoar logo */
-.sponsors-mobile-4 > img:nth-child(2) {
-  width: 26%;
-}
-
 /* altair logo */
 .sponsors-mobile-9 {
   align-items: center;
   width: 140%;
-  margin-left: 41px;
 }
 
+/* xoar logo */
 .sponsors-mobile-4 > img:nth-child(2) {
-  width: 26%;
+  width: 14%;
+  margin-right: 7%;
 }
 
+/* bhor logo */
 .sponsors-mobile-7 > img:nth-child(1) {
-  width: 32%;
+  width: 19%;
 }
 
-.sponsors-mobile-6 > img:nth-child(1) {
-  width: 36%;
-}
-
+/* nxp logo */
 .sponsors-mobile-2 > img:nth-child(2) {
-  width: 36%;
+  width: 22%;
 }
 
 .faclons-logo img {
@@ -1009,7 +1002,6 @@ section {
 
 .sponsors-mobile-9 {
   width: 100%;
-  margin-left: -16px;
 }
 
 .sponsors-mobile-1 > img,
@@ -1021,7 +1013,7 @@ section {
 .sponsors-mobile-7 > img,
 .sponsors-mobile-8 > img,
 .sponsors-mobile-9 > img {
-  width: 43%;
+  width: 28%;
 }
 
 .sponsors-mobile-1,
@@ -1036,10 +1028,11 @@ section {
   padding: 0;
 }
 
+/* altair logo */
 .sponsors-mobile-9 > img:nth-child(1) {
-  width: 156px;
+  width: 40%;
   height: auto;
-  margin-left: 26%;
+  margin: 0 auto;
 }
 
 .facebook,

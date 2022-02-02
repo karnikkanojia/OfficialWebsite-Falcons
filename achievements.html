@@ -43,7 +43,190 @@
 
   gtag('config', 'G-04C6SSEMBZ');
 </script>
-</head>
+  </head>
+  <style>
+    body {
+      background-color: #fbf7f2;
+      overflow-x: hidden;
+    }
+
+    .col {
+      text-align: center;
+      background: #fbf7f2;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 70px;
+      height: 70px;
+    }
+    .container{
+      overflow-x: hidden;
+    }
+    
+     .container3 {
+      padding:3rem;
+      display: grid;
+      grid-gap: 2em;
+      margin-top: 60%
+    }
+
+    .container2 {
+      padding: 3em;
+      display: grid;
+      display: grid;
+      grid-gap: 2em;
+      /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+   }
+
+    .quote {
+      /* padding: 2em; */
+
+      border-radius: 0.3em;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 1);
+      padding: 5px 32px 10px 32px;
+      background: #ffffff;
+      box-sizing: border-box;
+      /* basic shadow */
+      box-shadow: 0px 7px 14px #d3dae2;
+      border-radius: 25px;
+    }
+
+
+    p {
+      margin-top: 0;
+      font-family: "Biryani", sans-serif;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 160%;
+      /* or 51px */
+
+      letter-spacing: 0.14px;
+      padding-top: 8px;
+      color: #000000;
+    }
+
+    h6 {
+      font-family: "Biryani", sans-serif;
+      font-style: normal;
+      font-weight: revert;
+      font-size: 15px;
+      line-height: 160%;
+      /* identical to box height, or 26px */
+      letter-spacing: 0.14px;
+      color: #534d4d;
+    }
+
+    .sae {
+      width: 100px;
+    }
+
+    .seds {
+      width: 150px;
+      padding-top: 20px;
+    }
+    .bits {
+      width: 60px;
+      padding-top: 10px;
+    }
+    .rank {
+      width: 70px;
+      float: right;
+      padding-top: 15px;
+      width:75px;
+      height: 75px;
+    }
+    .rank1 {
+      width: 70px;
+      float: right;
+      padding-top: 15px;
+      width: 90px;
+      height: 90px;
+    }
+
+
+    @media(max-width:1200px)
+    {
+      .container3 {
+      padding:3rem;
+      display: grid;
+      grid-gap: 2em;
+      margin-top: 75%
+    }
+    }
+    @media (min-width: 950px) {
+
+      .container2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container{
+      overflow-x: hidden;
+    }
+    }
+
+      @media (max-width: 1300px) {
+      .container{
+      overflow-x: hidden;
+    }
+    }
+
+    @media (max-width: 950px) {
+
+      .container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        margin-top: 40px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .container2 {
+        grid-template-columns: repeat(1, 1fr);
+        
+      }
+      .container{
+      overflow-x: hidden;
+      }
+    }
+
+    @media(max-width:1000px){
+      .container3 {
+      padding:3rem;
+      display: grid;
+      grid-gap: 2em;
+      margin-top: calc(100% - 150px);
+    }
+      .container{
+      overflow-x: hidden;
+    }
+      #falcon-logo {
+        height: 1.5rem;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #title {
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+      #falcon-logo {
+        height: 2rem;
+        width: auto;
+      }
+    }
+
+  </style>
+
   <body>
         <section id="title">
         
@@ -79,8 +262,8 @@
           </nav>
         </section>
     <div class="wrapper" style="display: grid; place-items: center">
-      <div class="vulcan-container" >
-        <!-- <img src='achievements/assets/images/vulcan_model.png' > -->
+      <div class="container" >
+        <img src='achievements/assets/images/vulcan_model.png' >
       </div>
       <div class="scroll-down"></div>
     </div>
@@ -88,7 +271,7 @@
             <div class="quote">
               <img src="achievements/assets/images/sae.jpg" class="sae" />
               <img src="achievements/assets/images/5.png" class="rank1" />
-              <h4>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2021</h4>
+              <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2021</h1>
               <h6>Lakeland, Florida, USA</h6>
               <p>
                 Despite additional challenges faced due to COVID-19, the team worked diligently in innovating their 2021 flagship
@@ -106,8 +289,8 @@
         <div class="quote" >
           <img src="achievements/assets/images/sae.jpg" class="sae" />
           <img src="achievements/assets/images/3.PNG" class="rank" />
-          <h4>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2020</h4>
-          <h6 class='place'>Lakeland, Florida, USA/6-8th March, 2020</h6>
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2020</h1>
+          <h6>Lakeland, Florida, USA/6-8th March, 2020</h6>
           <p>
             Team’s 2020 Aircraft, “Airavat” is a single electric motor
             propelled, high wing aircraft with a tricycle landing gear, capable
@@ -120,7 +303,7 @@
         <div class="quote" >
           <img src="achievements/assets/images/sae.jpg" class="sae" />
           <img src="achievements/assets/images/4.PNG" class="rank" />
-          <h4>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2019</h4>
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2019</h1>
           <h6>Fort Worth, Texas, USA/6-8th March, 2019</h6>
           <p>
             This was the most successful season the Team ever had. 2019’s Flagship
@@ -134,7 +317,7 @@
         <div class="quote" >
           <img src="achievements/assets/images/sae.jpg" class="sae" />
           <img src="achievements/assets/images/6.PNG" class="rank" />
-          <h4>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2018</h4>
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2018</h1>
           <h6>Lakeland, Florida, USA/6-8th March, 2018</h6>
           <p>
           Zephyrus is indeed the majestic advanced class aircraft which definitely lives up to its name- The Greek god of winds.
@@ -147,7 +330,7 @@
         <div class="quote" >
           <img src="achievements/assets/images/sae.jpg" class="sae" />
           <img src="achievements/assets/images/7.PNG" class="rank1" />
-          <h4>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2017</h4>
+          <h1>SAE AERODESIGN INTERNATIONAL EAST COMPETITION 2017</h1>
           <h6>Lakeland, Florida, USA/6-8th March, 2017</h6>
           <p>
             Jetaayu has a wingspan of 3.2m and weighs 16 pounds. It has the capability of carrying 5 pounds of static payload and 2
@@ -161,7 +344,7 @@
         <div class="quote" >
           <img src="achievements/assets/images/seds.png" class="seds" />
           <img src="achievements/assets/images/3.PNG" class="rank" />
-          <h4>INDIAN SPACE CONCLAVE-SEDS VIT 2017</h4>
+          <h1>INDIAN SPACE CONCLAVE-SEDS VIT 2017</h1>
           <h6>VIT Vellore/5-6th August, 2017</h6>
           <p>
             Indian Space Conclave was organised by SEDS VIT on 5th and 6th
@@ -178,7 +361,7 @@
         <div class="quote" >
           <img src="achievements/assets/images/bits.png" class="bits" />
           <img src="achievements/assets/images/7.PNG" class="rank1" />
-          <h4>ATMOS BITS-PILANI TECH EXPO 2017</h4>
+          <h1>ATMOS BITS-PILANI TECH EXPO 2017</h1>
           <h6>BITS Pilani, Hyderabad/28-29th October, 2017</h6>
           <p>
             ATMOS is an event organised by BITS Pilani every year during their

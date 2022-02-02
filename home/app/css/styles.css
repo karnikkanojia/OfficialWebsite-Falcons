@@ -31,11 +31,6 @@ body {
   background-color: #ffffff;
   z-index: 1000;
   padding: 0;
-  width: 100vw;
-}
-
-#vulcantailupper2 {
-  display: none;
 }
 
 .navbar-brand {
@@ -55,6 +50,11 @@ body {
   height: 2rem;
   width: auto;
   margin: 0 auto;
+}
+
+#menuToggle {
+  display: none;
+  color: #000;
 }
 
 .super-center {
@@ -134,7 +134,7 @@ body {
   padding-left: 2%;
   height: 100%;
   width: 100%;
-  background: url(../../assets/vulcan_laptop.png) no-repeat center top 80%;
+  background: url(../../assets/vulcan_laptop.png) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,22 +243,19 @@ body {
 
 @media (min-width: 1200px) {
   .work {
-    position: absolute;
-    z-index: 10;
-    right: 2%;
-    height: fit-content;
-    top: 28%;
+    margin-right: 3%;
+    float: right;
+    position: relative;
+    margin-top: -37%;
+    height: 40%;
   }
-
   .links {
-    padding-top: 160%;
+    padding-top: 170%;
   }
 }
 
 .team-intro {
   position: relative;
-  width: 100vw;
-  background-color: white;
 }
 
 #about-us-heading {
@@ -662,7 +659,7 @@ section {
   size: 10%;
 }
 .listing-carousel-button.listing-carousel-button-prev {
-  left: -15px;
+  left: -30px;
   padding-left: 50px;
   border-radius: 0 60px 60px 0;
 }
@@ -747,8 +744,8 @@ section {
   z-index: 20;
 }
 .testi-avatar img {
-  width: 105px;
-  height: 105px;
+  width: 80px;
+  height: 80px;
   float: left;
   border-radius: 100%;
   border: 6px solid #fff;
@@ -814,7 +811,6 @@ section {
     background-color: white;
     color: black;
     text-align: center;
-    width: 100vw;
   }
   #falcon-logo {
     height: 2rem;
@@ -993,8 +989,6 @@ section {
 
 .testimonials {
   height: 100vh;
-  background-color: white;
-  width: 100vw;
 }
 
 #testimonial-heading {
@@ -1003,8 +997,6 @@ section {
 
 .team-intro {
   overflow-x: hidden;
-  width: 100vw;
-  background-color: white;
 }
 
 .sponsors-mobile-9 {
@@ -1046,57 +1038,6 @@ section {
 .twitter,
 .linkedin,
 .instagram {
-  width: 30px;
-  height: 30px;
-}
-
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot.owl-nav {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  background-color: #dab783;
-  display: block;
-  padding: 0 0.3em !important;
-  font-size: 10em;
-  margin: 0;
-  cursor: pointer;
-  color: #dab783;
-  transform: translate(-50%, -50%);
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel button.owl-dot.owl-nav {
-  position: absolute;
-  right: -23px;
-  top: 50%;
-  background-color: #dab783;
-  display: block;
-  padding: 0 0.3em !important;
-  font-size: 10em;
-  margin: 0;
-  cursor: pointer;
-  color: #dab783;
-  transform: translate(-50%, -50%);
-}
-
-.owl-prev,
-.owl-next {
-  position: absolute;
-  height: 100px;
-  color: inherit;
-  background: none;
-  border: none;
-  z-index: 100;
-}
-
-#fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: xxx-large;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 25px;
+  height: 25px;
 }

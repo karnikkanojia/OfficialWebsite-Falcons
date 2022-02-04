@@ -45,14 +45,14 @@ body {
   padding: 0 20px;
 }
 .nav-link {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Montserrat", sans-serif !important;
 }
 
 #falcon-logo {
-  height: 2rem;
+  height: 1.9rem;
   width: auto;
   margin: 0 auto;
 }

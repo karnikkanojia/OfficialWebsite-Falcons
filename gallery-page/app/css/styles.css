@@ -12,6 +12,10 @@
   z-index: 1000;
 }
 
+.nav-link {
+  color: black !important;
+}
+
 .navbar-brand {
   width: 40%;
 }
@@ -19,14 +23,20 @@
   padding: 0 20px;
 }
 .nav-link {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Montserrat", sans-serif !important;
 }
-
+.navbar {
+  background-image: url(../../../home/assets/vulcan_laptop_nav.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+}
 #falcon-logo {
-  height: 2rem;
+  height: 1.9rem;
   width: auto;
   margin: 0 auto;
 }
@@ -82,9 +92,9 @@
   border-right: 5px solid #fff;
   z-index: 9;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%) rotate(45deg);
-  -moz-transform: translate(-50%, 0%) rotate(45deg);
-  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
   -webkit-animation: fade_move_down 4s ease-in-out infinite;
   -moz-animation: fade_move_down 4s ease-in-out infinite;
   animation: fade_move_down 4s ease-in-out infinite;
@@ -153,6 +163,7 @@ body {
   background-color: #fbf7f2;
   font: normal 16px sans-serif;
   padding: 0px 0;
+  overflow-x: hidden;
 }
 
 .gallery-container {
@@ -241,7 +252,7 @@ body {
     text-align: center;
   }
   #falcon-logo {
-    height: 2rem;
+    height: 1.5rem;
     width: auto;
   }
   .scroll-down {
@@ -274,6 +285,7 @@ body {
     background-color: #fbf7f2;
     font: normal 16px sans-serif;
     padding: 0px 0;
+    overflow-x: hidden;
   }
   .video-overlay {
     position: absolute;

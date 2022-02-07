@@ -24,6 +24,40 @@
 
 /* between tablets and large phones */
 @media (max-width: 948.5px) {
+  .listing-carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 100;
+    cursor: pointer;
+    background: #dab783;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
+    transition: all 200ms linear;
+    outline: none;
+    opacity: 1;
+    margin-right: 20px;
+  }
+  .listing-carousel-button.listing-carousel-button-next {
+    right: -53px;
+    padding-left: 23px;
+    border-radius: 60px 0 0 60px;
+    size: 10%;
+  }
+  .listing-carousel-button.listing-carousel-button-prev {
+    left: -36px;
+    padding-left: 50px;
+    border-radius: 0 60px 60px 0;
+  }
+  .listing-carousel-button.listing-carousel-button-next:hover {
+    right: -15px;
+    background: rgba(6, 27, 65, 0.4);
+  }
+  .listing-carousel-button.listing-carousel-button-prev:hover {
+    left: -15px;
+    background: rgba(6, 27, 65, 0.4);
+  }
   body {
     overflow-x: hidden !important;
   }
@@ -115,7 +149,8 @@
 
   .arrow-wrapper {
     position: absolute;
-    top: 90%
+    top: 90%;
+    left: 45%;
   }
 
   .buttons {
@@ -189,7 +224,10 @@
     background-size: cover;
     overflow-x: hidden;
   }
-
+  #navbar_top {
+    background-image: none;
+    background-color: #ddc68f;
+  }
   .text-landing {
     display: flex;
     flex-direction: column;
@@ -242,12 +280,6 @@
     margin-top: 2rem;
   }
 
-  .our-mission-para {
-    height: 50%;
-    padding: 0 7%;
-    margin: auto 0;
-  }
-
   .contact {
     height: fit-content;
   }
@@ -290,8 +322,7 @@
   #about-us-heading {
     top: auto !important;
     left: auto !important;
-    margin-top: 22px;
-    margin: 40px;
+    margin: 15px 0;
   }
 
   #vulcantail {
@@ -306,7 +337,6 @@
   }
 
   .about-us-para {
-    padding: 0 6%;
     margin: 0 auto;
   }
 
@@ -329,8 +359,13 @@
     top: auto !important;
     left: auto !important;
     width: fit-content !important;
+    margin-top: 1.75rem;
+  }
 
-    margin-top: 3.75rem;
+  .about-us-para,
+  .our-mission-para {
+    height: 50%;
+    padding: 0 24px;
   }
 
   .department-heading > div:nth-child(1) {
@@ -397,16 +432,60 @@
   }
   #our-mission-heading {
     margin: 0 auto;
-    margin-bottom: 25px;
-    padding: 50px 0 0 0;
   }
   #about-us-heading {
     text-align: center;
+  }
+
+  .about-us-para {
+    margin: 20% 0;
+  }
+
+  .our-mission-para {
+    margin: 20% 0;
+  }
+
+  .our-mission-para > p:nth-child(2) {
+    margin-top: 5%;
   }
 }
 
 /* small-devices */
 @media (max-width: 575.98px) {
+  .listing-carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 100;
+    cursor: pointer;
+    background: #dab783;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
+    transition: all 200ms linear;
+    outline: none;
+    opacity: 1;
+    margin-right: 20px;
+  }
+  .listing-carousel-button.listing-carousel-button-next {
+    right: -50px;
+    padding-left: 16px;
+    border-radius: 60px 0 0 60px;
+    size: 10%;
+  }
+  .listing-carousel-button.listing-carousel-button-prev {
+    left: -37px;
+    padding-left: 57px;
+    border-radius: 0 60px 60px 0;
+  }
+  .listing-carousel-button.listing-carousel-button-next:hover {
+    right: -15px;
+    background: rgba(6, 27, 65, 0.4);
+  }
+  .listing-carousel-button.listing-carousel-button-prev:hover {
+    left: -15px;
+    background: rgba(6, 27, 65, 0.4);
+  }
   body {
     overflow-x: hidden !important;
   }
@@ -431,12 +510,10 @@
   .work {
     display: none;
   }
-
   .arrow-wrapper {
     position: absolute;
     top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 48%;
   }
 
   .sponsors-1,
@@ -516,45 +593,5 @@
 
   .contact {
     height: 120vh;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 655px) and (min-width: 767.98px) {
-  .contact {
-    height: 210vh;
-  }
-
-  #our-mission-content > .title {
-    left: 25%;
-    top: 16%;
-  }
-
-  #about-us-heading {
-    right: 27%;
-  }
-
-  .about-us-para,
-  .our-mission-para {
-    padding: 0px 2rem;
-  }
-
-  .wrapper {
-    height: 150vh;
-  }
-
-  .achievements {
-    height: 200vh;
-  }
-
-  .contact {
-    height: 303vh;
-  }
-
-  #footer {
-    height: 70px;
-  }
-
-  .departments-container {
-    height: fit-content;
   }
 }

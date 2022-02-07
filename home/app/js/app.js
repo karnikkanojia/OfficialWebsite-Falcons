@@ -2,6 +2,9 @@ const downArrow = document.querySelector(".ico");
 const aboutUs = document.querySelector(".about-us");
 const navBar = document.querySelector("nav");
 
+if ("virtualKeyboard" in navigator) {
+  navigator.virtualKeyboard.overlaysContent = true
+}
 
 downArrow.addEventListener("click", () => {
   aboutUs.scrollIntoView({

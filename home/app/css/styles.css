@@ -38,6 +38,10 @@ body {
   display: none;
 }
 
+.nav {
+  background-color: #212529;
+}
+
 .navbar-brand {
   width: 40%;
 }
@@ -49,6 +53,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Montserrat", sans-serif !important;
+  color: black !important;
 }
 
 #falcon-logo {
@@ -121,7 +126,7 @@ body {
 }
 
 #falcon-logo {
-  height: 2.5rem;
+  height: 1.9rem;
   width: auto;
   margin: 0 auto;
 }
@@ -189,7 +194,7 @@ body {
 .arrow-wrapper {
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 50% !important;
   transform: translate(-50%, -50%);
 }
 
@@ -347,7 +352,11 @@ body {
 }
 
 .seperator {
-  background-color: #dab783;
+  background-image: url(../../assets/vulcan_laptop_nav.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 10vh;
 }
@@ -435,7 +444,7 @@ body {
 }
 
 #sponsor-text {
-  font-size: clamp(1.4rem, 60%, 2rem);
+  font-size: 1rem;
 }
 
 .sponsors-section {
@@ -585,7 +594,6 @@ section {
   float: left;
   position: relative;
   padding: 30px 0;
-  background: #fcfcfd;
   z-index: 1;
   width: 100%;
 }
@@ -663,7 +671,7 @@ section {
   size: 10%;
 }
 .listing-carousel-button.listing-carousel-button-prev {
-  left: -15px;
+  left: -25px;
   padding-left: 50px;
   border-radius: 0 60px 60px 0;
 }
@@ -733,6 +741,7 @@ section {
   font-size: 25px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
 .testimonials-carousel .swiper-slide {
@@ -742,15 +751,14 @@ section {
   position: absolute;
   left: 50%;
   top: -30px;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-left: -45px;
   z-index: 20;
 }
 .testi-avatar img {
-  width: 105px;
-  height: 105px;
-  float: left;
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
   border: 6px solid #fff;
   box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
@@ -817,10 +825,6 @@ section {
     text-align: center;
     width: 100vw;
   }
-  #falcon-logo {
-    height: 2rem;
-    width: auto;
-  }
 }
 
 .testimonials-carousel-wrap {
@@ -864,26 +868,28 @@ section {
   text-align: center;
 }
 
+/* xoar logo */
+.sponsors-mobile-4 > img:nth-child(2) {
+  width: 26%;
+}
+
 /* altair logo */
 .sponsors-mobile-9 {
   align-items: center;
   width: 140%;
 }
 
-/* xoar logo */
 .sponsors-mobile-4 > img:nth-child(2) {
-  width: 14%;
-  margin-right: 7%;
-}
-
-/* bhor logo */
-.sponsors-mobile-7 > img:nth-child(1) {
   width: 19%;
+  margin-right: 6%;
 }
 
-/* nxp logo */
+.sponsors-mobile-7 > img:nth-child(1) {
+  width: 28%;
+}
+
 .sponsors-mobile-2 > img:nth-child(2) {
-  width: 22%;
+  width: 28%;
 }
 
 .faclons-logo img {
@@ -896,7 +902,14 @@ section {
 }
 
 #navbar_top {
-  background-color: #fbf7f2;
+  padding-left: 2%;
+
+  background-color: none;
+  background-image: url(../../assets/vulcan_laptop_nav.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
 }
 
 #about-us-content {
@@ -946,6 +959,7 @@ section {
   font-weight: 400;
   text-align: justify;
 }
+
 .testimonial-name {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -1002,7 +1016,7 @@ section {
 }
 
 .sponsors-mobile-9 {
-  width: 100%;
+  width: 93%;
 }
 
 .sponsors-mobile-1 > img,
@@ -1014,7 +1028,7 @@ section {
 .sponsors-mobile-7 > img,
 .sponsors-mobile-8 > img,
 .sponsors-mobile-9 > img {
-  width: 28%;
+  width: 32%;
 }
 
 .sponsors-mobile-1,
@@ -1027,13 +1041,18 @@ section {
 .sponsors-mobile-8,
 .sponsors-mobile-9 {
   padding: 0;
+  margin: 30px 8px;
 }
 
 /* altair logo */
 .sponsors-mobile-9 > img:nth-child(1) {
-  width: 40%;
+  width: 37%;
   height: auto;
-  margin: 0 auto;
+}
+
+/* holybro logo */
+.sponsors-mobile-2 > img:nth-child(1) {
+  width: 44%;
 }
 
 .facebook,
@@ -1042,6 +1061,13 @@ section {
 .instagram {
   width: 30px;
   height: 30px;
+}
+
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover,
+.instagram:hover {
+  transform: scale(1.25);
 }
 
 .owl-carousel .owl-nav button.owl-prev,
@@ -1094,4 +1120,25 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-left: -170%;
+}
+
+#fa:hover {
+  transform: scale(1.5);
+}
+
+/* .owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+} */
+
+.owl-carousel .owl-stage-outer {
+  overflow: inherit;
+}
+
+.quotes-left {
+  float: left;
 }

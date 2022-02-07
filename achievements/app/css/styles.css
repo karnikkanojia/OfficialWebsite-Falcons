@@ -4,7 +4,7 @@ body {
 }
 
 .vulcan-container {
-  background: url("../../assets/images/vulcan_model.png") no-repeat center
+  background: url("../../assets/images/vulcan_model_1.png") no-repeat center
     center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -31,7 +31,9 @@ body {
 }
 
 .container3 {
-  padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
   display: grid;
   grid-gap: 2em;
   background-color: #fbf7f2;
@@ -62,6 +64,7 @@ body {
 p {
   margin-top: 0;
   font-family: "Biryani", sans-serif;
+  text-align: justify;
 }
 
 h6 {
@@ -104,7 +107,9 @@ h6 {
 
 @media (max-width: 1200px) {
   .container3 {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
     display: grid;
     grid-gap: 2em;
     background-color: #fbf7f2;
@@ -146,19 +151,19 @@ h6 {
 
 @media (max-width: 1000px) {
   .vulcan-container {
-    background: url("../../assets/images/vulcan_model_mobile.png") no-repeat
-      center center;
+    background: url("../../assets/images/vulcan_model_mobile.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
+    background-position: center;
   }
 
   .container3 {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
     display: grid;
     grid-gap: 2em;
     background-color: #fbf7f2;
@@ -179,10 +184,6 @@ h6 {
     color: black;
     text-align: center;
   }
-  #falcon-logo {
-    height: 2rem;
-    width: auto;
-  }
 }
 
 #title {
@@ -196,15 +197,25 @@ h6 {
 .nav-item {
   padding: 0 20px;
 }
+
+.navbar {
+  background-image: url(../../../home/assets/vulcan_laptop_nav.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+}
+
 .nav-link {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Montserrat", sans-serif !important;
+  color: black !important;
 }
 
 #falcon-logo {
-  height: 2rem;
+  height: 1.9rem;
   width: auto;
   margin: 0 auto;
 }
@@ -220,7 +231,7 @@ h6 {
 @media (min-width: 500px) {
   .scroll-down {
     position: absolute;
-    top: 87%;
+    top: 85%;
     display: block;
     text-align: center;
     font-size: 20px;
@@ -232,7 +243,7 @@ h6 {
     border-bottom: 5px solid #fff;
     border-right: 5px solid #fff;
     z-index: 9;
-    left: 50%;
+    left: 49%;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -moz-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);

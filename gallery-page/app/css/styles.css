@@ -349,3 +349,7 @@ body {
     overflow-x: hidden !important;
   }
 }
+
+#navbarSupportedContent {
+  margin-left: 12%;
+}

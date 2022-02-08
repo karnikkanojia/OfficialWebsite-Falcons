@@ -188,6 +188,14 @@
     width: 35rem;
   }
 
+  .seperator {
+    background-image: url(../../assets/vulcan_mobile_nav.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+  }
+
   .our-mission-para {
     height: 45%;
   }
@@ -225,8 +233,11 @@
     overflow-x: hidden;
   }
   #navbar_top {
-    background-image: none;
-    background-color: #ddc68f;
+    background-image: url(../../assets/vulcan_mobile_nav.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
   }
   .text-landing {
     display: flex;

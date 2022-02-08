@@ -181,6 +181,10 @@
     overflow-x: hidden !important;
   }
 
+  #navbarSupportedContent {
+    margin-left: 0;
+  }
+
   #vulcantailupper2 {
     display: block;
     background: url(../../assets/vulcantailupper1.png) no-repeat center center;

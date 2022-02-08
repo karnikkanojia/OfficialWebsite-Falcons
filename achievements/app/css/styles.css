@@ -297,4 +297,9 @@ h6 {
 #navbarSupportedContent {
   margin-left: 12%;
 }
- 
+
+@media (max-width: 767.98px) {
+  #navbarSupportedContent {
+    margin-left: 0;
+  }
+}

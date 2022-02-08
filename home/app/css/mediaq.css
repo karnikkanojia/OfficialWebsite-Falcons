@@ -20,6 +20,10 @@
   .work {
     display: none;
   }
+
+  .vulcan-large {
+    display: none;
+  }
 }
 
 /* between tablets and large phones */

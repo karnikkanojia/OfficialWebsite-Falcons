@@ -1142,3 +1142,27 @@ section {
 .quotes-left {
   float: left;
 }
+
+.vulcan-large {
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 72px;
+  font-weight: 700;
+  position: absolute;
+  color: black;
+  letter-spacing: 6px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#large-one {
+  transform: rotateZ(90deg);
+  left: -7%;
+  top: 58.5%;
+}
+
+#large-two {
+  transform: rotateZ(-90deg);
+  top: 35%;
+  right: -7%;
+}

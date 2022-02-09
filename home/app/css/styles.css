@@ -1167,3 +1167,7 @@ section {
   margin-left: 11%;
 }
  
+#nature-of-business > span:nth-child(2) {
+  height: 23%;
+ }
+ 

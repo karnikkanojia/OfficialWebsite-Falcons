@@ -164,10 +164,8 @@ body {
 
 .text-landing > p {
   font-family: "Biryani", "sans-serif";
+  font-size: 18px;
   color: white;
-}
-
-.text-landing > p {
   width: 70%;
 }
 
@@ -756,7 +754,8 @@ section {
   margin-left: -45px;
   z-index: 20;
 }
-.testi-avatar img {
+.testi-avatar img,
+.testi-avatar i {
   width: 100%;
   height: 100%;
   border-radius: 100%;

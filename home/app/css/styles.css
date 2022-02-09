@@ -1140,7 +1140,7 @@ section {
 }
 
 .vulcan-large {
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: "Open Sans", "sans-serif";
   font-size: 72px;
   font-weight: 700;
   position: absolute;
@@ -1166,8 +1166,7 @@ section {
 #navbarSupportedContent {
   margin-left: 11%;
 }
- 
+
 #nature-of-business > span:nth-child(2) {
   height: 23%;
- }
- 
+}

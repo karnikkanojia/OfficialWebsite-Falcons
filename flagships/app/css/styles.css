@@ -44,9 +44,9 @@
 }
 
 /*Flagships*/
-.flagships {
+/* .flagships {
   margin-top: 8vh !important;
-}
+} */
 
 .nopadding {
   padding: 0 !important;
@@ -147,10 +147,6 @@
   }
 }
 
-.flaships {
-  margin-top: 8vh;
-}
-
 .flagship-heading {
   font-size: 36px;
   padding: 17% 8% 5%;
@@ -183,10 +179,6 @@
   .flagship-heading {
     justify-content: center !important;
   }
-
-  /* .flagship-row:nth-child(odds) .flagship-heading {
-    justify-content: center !important;
-  } */
 
   .order-content {
     order: 1;

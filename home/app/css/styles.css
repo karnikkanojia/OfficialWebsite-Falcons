@@ -758,9 +758,6 @@ section {
 .testi-avatar i {
   width: 100%;
   height: 100%;
-  border-radius: 100%;
-  border: 6px solid #fff;
-  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
 }
 .swiper-slide-active .testimonials-text {
   background: #fff;
